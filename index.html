@@ -1,0 +1,2514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#0F2740">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FieldOps">
+<title>A&amp;B FieldOps</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiQSZCIEZpZWxkT3BzIiwic2hvcnRfbmFtZSI6IkZpZWxkT3BzIiwiZGVzY3JpcHRpb24iOiJKb2Igc2l0ZSBtYW5hZ2VtZW50IGZvciBBcm5vbGQgJiBCbGFuYyBwcm9qZWN0IG1hbmFnZXJzIiwic3RhcnRfdXJsIjoiLiIsInNjb3BlIjoiLiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwib3JpZW50YXRpb24iOiJwb3J0cmFpdCIsImJhY2tncm91bmRfY29sb3IiOiIjMEYyNzQwIiwidGhlbWVfY29sb3IiOiIjMEYyNzQwIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBSUFBQURkdnZ0UUFBQUZxRWxFUVZSNG5PM2QyM1ViVnd4QVVUZ04yRjA0WlNRTnBCM1g0SGJjZ050d0dTb2hINU5GTStKRHd3dmc0blhPcjd5azBXQVR3NGRvZnZyODlTOGhXdTJQNkFPZzJnR0lWQUdJVkFHSVZBR0lWQUdJVkFHSVZBR0lWQUdJVkFHSVZBR0lWQUdJVkFHSVZBR0lWQUdJVkFHSVZBR0lWQUdJVkFHSVZBSG9mVisrL2JQODFZRUI2SDhkUGg0cGVmN1ZtUUhvZDljeWJwVTgvK3JZQVBSZnI0ckIwQkdBUkZhdldSZ1NrVS9EMzFpb1IvRDIvWWZKa1JSdE5DRERGVEtXMGR4TG1PMEZhT3psYkNnZ2ozblBORFFSa04ra0J4b2FCOGg3eHRNTXpRSzBaN3FqREEwQ3RIT3Vjd3hOQWJSL29rTU05WDhlS0hhUTdaOGZhcjZCd3RkQStBRjQxM2tEcFJwZTExWFVGcENKbnN2VWJiOWJwM3Bld3N6bmJUTDdWQnZScW9hQW5MWUZodTdXRFpEcnRRWkR0N1VDdE9HZUNvYmUxUWZRdHZ1NUdMcXV3Nk13cTJHOEpJUEhaVWZsTjFDSW5vVi9mN2NHZTZqMkJncGZBK0VIRUY3aERaUmhlT3locWhzb2c1N3JzaDNQdGtwdW9JVFRHcnVLNmdGS3FNZndlNVl6VkF4UVdqMkczN21Xb1VxQWt1c3gvUDZGRE5XNEV4MzFaTTl5SmF5YlZHQURsZE5qOWJOSzdLSHNHNmowVGJuMHdaOHM5UWFxUG9BSmV5Z3ZvT3A2REE4Z3M2R2tsN0FlZWk1VnZCdDNzb3lBbXVtNTFQTDNTbmNKYTNtV2oxcGV6bklCYXF6bnFKK2hMSmV3eHZjU2J1dDBPMG14Z1VicGtWNTdLSDREZGJvNXZsU1BYeng0QS9VNGlXdjEyRU9SZ0Nick9XcGdLQXdRZW82cUc0b0JoSjdyU2hzS3VCT05ua2RWUERPN04xREZjN1N0aXF0bzN3YWE5bVRQY3JWdVk1czJFSHJPVjJzUDdkaEF0VzVTU2FweTB0dzNVSlVUa2EwcWU4Z1hFSG8wbFREa0NBZzkrdkliOGdLRUhxdVNHM0lCaEI3Yk1odXlmeFNHSHFkeVBoVmlDU2puYjlpc2JMZFBzMHNZZXZhVTdYSm1zNEd5M1N6YWwrZUVHMnlnUEwvTW5QTHNJUzBnOUVTVnhKQVdrUDdYUU05eUdVNit3U1ZNY3hEb1VSWis4bTBlaGEwZENucE1pajM1WmcvalF6NHFnSTRDVDc3bFN4bm5Ed3M5NWtXZC9JQjNaYURIcWJmdlAvYWZXMk5BSDM1YUczcnU5dmJycDltMzh2L0F2T3ZzTjVEcjUwVzI3TkN6d1pESENGd3VZVTZmV051eWF6ZXVocHhHNEhVZnlQd3pzMXQySzhiSmtOOElITzlFSHdlTm5rYzlzbUp1eUhVRThmOC8wTXcrVlBMbHo3LzNISW15RlA5RDJiVE83QmpEUGVRYWdIWjNYa1lKUXdEYTJxc204aHNDMEw3V05DUTNCS0JOYVJ4a05nU2dIZWtGcERVRUlQZXNacC9URUlCOE01eDZ6bWVHQU9SWWV6MENJTDhtNkJFQU9UVkVqd0RJb3psNkJFRG1qZElqQUxKdG1oNEJrR0VEOVFpQXJKcXBSd0JrMGxnOUFpQjlrL1ZJZFVEaEx3OE4xeU9sQVptL25XcnRBRXdxcWtmcS9sSDl1K0Z0SG9DdDJycDZwT2dHY24wNzFjSlAxMVJhajFRRXRPSHRWQXMvZmEzcWVxUWNvT2Z6OHphRW50c3FBWXA5T3hWNjdsWUdVT3picWREenFCcUFZdDlPaFo0bkZRQVUrM1lxOUR3dk82RFl0MU9oNThOU0E0b1ZnSjR6NVFVVWV3MUN6OG55QWpJODZiSDN3UnZya2Z5dmhlMS93WktYU0Y4cTd3WTYycnlIMFBOcTJRSEpSa1BvV2FnQUlObGlDRDFyMVFBa3pvYlFzMXdaUU9KbUNEMmFLZ0VTQjBQb1VaYjlZZnpkd3YrVy9yYVplcVRjQmpyS05xMXN4N096a29BazA4enlIRWxJVlFGSmpzbGxPSWJZQ2dPUzZQbWhSNm9Ea3JncG91ZW9QQ0NKbUNWNkxuVUFKSHNuaXA3cm1nQ1NYWE5Gejd2NkFCTC82YUxudGxhQXhIUEc2TGxiTjBEaU0ybjBQS29oSUxHZU4zcWUxQk9RMkUwZFBjOXJDMGdzWm8rZUQrc01TSFFDMEhPbTVvQmsxUUY2VHRZZmtMeXVBVDNuR3dGSVhqR0JucGNxK1NldG1oNzlPU3h1MXBxeWdTN2RoWUtlNWNadElMSnQzQVlpMndCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXFnQkVxZ0JFcWdCRXF2NEZXNVc1M0F0UStrTUFBQUFBU1VWT1JLNUNZSUk9Iiwic2l6ZXMiOiIxOTJ4MTkyIiwidHlwZSI6ImltYWdlL3BuZyIsInB1cnBvc2UiOiJhbnkifSx7InNyYyI6ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBSUFBQUI3R2tPdEFBQVVOMGxFUVZSNG5PM2QzWGtzMTNFRjBLWVRvTEtndzZBVGNEcU9nZWt3QWFXaE1CaUNIa0JEdUJlWVFVLy8xcTVhNjEzNHpweXUycHM5SU1SZmZ2M3Q5d1dBZWY3cjdnTUFjQThGQURDVUFnQVlTZ0VBREtVQUFJWlNBQUJES1FDQW9SUUF3RkFLQUdBb0JRQXdsQUlBR0VvQkFBeWxBQUNHVWdBQVF5a0FnS0VVQU1CUUNnQmdLQVVBTUpRQ0FCaEtBUUFNcFFBQWhsSUFBRU1wQUlDaEZBREFVQW9BWUNnRkFEQ1VBZ0FZU2dFQURLVUFBSVpTQUFCREtRQ0FvUlFBd0ZBS0FHQW9CUUF3bEFJQUdFb0JBQXlsQUFDR1VnQUFReWtBZ0tFVUFNQlFDZ0JnS0FVQU1KUUNBQmhLQVFBTXBRQUFobElBQUVNcEFJQ2hGQURBVUFvQVlDZ0ZBRENVQWdBWVNnSFEwRC8rNzM4amZpYmNTd0hRelZ0U0g1dlhaL3hNdUowQ29KV1BHWDFVWHAveE02RUNCVUFmbjlONWYxNmY4VE9oQ0FWQUUxZm1zZzZnaDE5Ky9lMzN1ODhBdTN3YngzLzk4V2Uxbnd3VmVBTWcyNXAvR04vMkQrem4vV1FvUWdFUWJIMyt2cHJVNS8xa3FFTUJrS3BPcHVzQVFpa0FJbFg3VmtjSGtFZ0JrR2RQMmo3LzM1NzNrNkVnQlVDWU0vN1Yvck4vTXRTa0FFaFNQMkhybnhEZUtRQmlISml0cC81OXJ3NGdoVDhFSThCSmtmcitaMXhuL0h4L0kwWjlDb0RxVHYwSDZyLysrUFBzbjMvZUQ0ZWRGQUNsTmZnNlJRZFFsdDhCVUZlRDlGKzZmQXBhVWdBVTFTazNPMzBXT2xFQVZOUXZNZnQ5SWhwUUFKVFROU3U3Zmk1eUtRQnE2WjJTdlQ4ZGNSUUFoVXpJeHdtZmtSUUtnQ3JtSk9PY1QwcHgvZzZBKzgwTVJIOGZ3TzBVQURlYm1mN3YxQUEzOGhVUWR4cWUvb3NiNEZZS2dOdkl2amZ1Z2Jzb0FPNGg5VDV5Rzl4Q0FYQURlZmVaTytGNkNvQ3JTYnBIM0F3WFV3QmNTc1k5NTM2NGtnTGdPdEp0RGJmRVpmd2RBRmNRYXEveTl3RmN3QnNBcDVQK0c3ZzBMdUFOZ0hNSnNwMjhDbkFlYndDY1NQcnY1dzQ1andMZ0xKTHJLRzZTa3lnQVRpR3pqdVUrT1lNQzRIalM2Z3h1bGNNcEFBNG1wODdqYmptV0F1QklFdXBzYnBnRCtkZEFPWVpndXBKL041UkRlQVBnQU5ML1lpNmNReWdBOWhKR3QzRHQ3T2NySUhZUlE3ZnpkUkNiZVFOZ3UvVDAvK3VQUHh1a1ovcFQ0RWJlQU5nb1BYZCtpdjVtSHdmVzhBYkFGdjNpTWoxQTA1OEl0MUFBdkN3OWF4NWx2UTVnR2dYQWE5SlQ1bm5LNndCR1VRQzhJRDFmMXVTN0RtQU92d1JtbFFheDhsS3lwMy9lOUJyakd0NEErRjU2R2k2dkIySjZnRFo0WkZ4QUFmQ05CbEd5TGMxMUFPMzVDb2huR29USXpoeDNBelNtQUhnb1BmdU9DcjcwZTFoMEFBOG9BTDZXbm5xSFI1NExvUisvQStBTHd1NmFuM21sOUdmS0dSUUFQMHRQaXZPU1dnZlFqQUxnQitrWmNYWkc2d0E2OFRzQS90WWdHaTVMNS9TN1NxOHhqdUlOZ0dYSlQ3VGwybEJMRDlBR2o1dERLQUE2eE1IMWlhd0RhTUJYUU5NMUNJSWJzOWp0RVUwQmpKYWVYeFhDSy8wT2x4clh5QzE4QlRSWGVuSVZpYTBpeDlnamZSTFl6QnZBVU9rN1h6QjJYU2x4dkFGTUpLck9VUE5VNjZWUEJSc29nSEhTOTd4eXpsWSsyeHJwczhHcmZBVTBTSVAxamtqWTlIdU91R1FPNFExZ2l2UlVXbktDS2VXY2p6UVlGVlpTQUNNMFdPbXNWTTA2N1djTkJvWTFGRUIvRFpZNU1VOFR6L3hSZzdIaFczNEgwRno2R292UjI2VS9BcDd3QnRCWmV2bzBpSjRHSHlGOWluaENBYlNWdnJjTm92Tk5ndytTUGtzODRpdWdudEkzdGtGb2Z1YWhVSTAzZ0lZRVRVM3BueXQ5cnZqTUcwQXJEVlkwUFNXL2xmNk0yaitnVWJ3QjlKR2VMTXVNY0VuL2pBM0dqSGNLb0lrR2E1bWVqT3VsZjlJR3c4WWJCZEJCZzRWTXo4UlhwWC9lQmlQSG9nQWFhTENLNldtNFRmcW5iakI0K0NWd3R2UWxUQS9CL2RLZjRPSWhKdk1HRUN3OU93VEgwdUlTMHVkd01nV1FLbjNyR2dUZlVScGNSZm8wanVVcm9FanArOVlnOHM3Z3NYSXhid0I1eEVSWDZUZVRQcGtEZVFOSTBtREIwalB1QXVsUDJTTU80ZzBnUm5vdUxLSmhuZlJiYWpDb2N5aUFEQTJXS2ozWHJwUitWdzNHZFFnRkVLREJPcVVuMnZYU2I2ekIwRTdnZHdEVnBTOVNlcERkeTlQblZBcWdOUHRQK2d3c3hxQXdYd0hWbGI3NTF2NFFEYTR4ZlpJYjh3WlFWUHJPTklpdGFvd0VoL01HVUpGVjU3UDBXMDJmNnBhOEFkVFNZRW5TYzZxNDlBa3hIcVY0QXlna2ZiY1g2MzIrOUJ0dU1PU2RLSUFxR2l4R2VqYWxTTC9uQnFQZWhnSW9vY0ZLcEtkU2x2VGJiakR3UGZnZHdQM1NseUU5akhLWkhIYnlCbkF6Tzh4bTZaZWZQdndOZUFPNFUvb0NwQWRRRCtsVHRCaWsrM2dEdUUzNjNscmFJaG84aVBSZHlPVU40QjdwRTk4Z2RQb3hWTHhLQVZ3dGZVc1hpMXBZK25RWnJZdjVDdWhTNmZ1NVdOSGEwcDlPZ3dYSm9nQ3UwMkM0MC9ObGd2Um4xR0JOZ2lpQWl6UVk2L1JrbVNQOVNUVllsaFIrQjNDRjlJRk9ENVNaVEIzZjhnWndPbnZJTGRJZlhQcmlSUEFHY0s3MElVNFBFZEluY0RHRVovSUdjS0wwM2JONERUUjRpT2w3VkprQ09FdjYxRFlJRHQ0MGVKVHAyMVNXcjRDTzEyQllHMFFHbjZWUHByRThuRGVBZzZYdjJHTE4ra3Avc2cyV3F4b0ZjS1FHQTVxZUVUeVgvbndickZncEN1QXdEVVl6UFIxWUkvMHBOMWkwT2hUQU1Sb01aWG91c0Y3NnMyNndia1g0SmZBQjBzY3hQUTdZeHR6aURXQXZXMFNvOUVlZnZub1ZlQVBZSlgwRTB5T0EvZEpuZURIR08zZ0QyQzU5YzZ3TlM0c3hTTi9FR3ltQWpkSm5yc0hhYzVRR3c1QytqM2Z4RmRETEdveGFnNFhuRE9temJiQmY1UTNnTmVrYnNsZ1NIa3VmalFicmVURUY4SUlHNDVXKzRad3RmVUlhTE9tVkZNQmFEUVlyZmJlNVJ2cWNORmpWeS9nZHdDcnBJNVcrMGx6UHpFL2dEZUI3Tm9HQjBzY21mVzJ2b1FDK2tUNUc2V3ZNamRLSEozMTVMK0Fyb0dmU0J5aDlnYWtnZlFzV2kvQ1lONENIMHVmZTBIT0lCb09VdnN2bjhRYndoUWJqMG1CcEtjVlN0S1FBZm1iUTRaSDA3YkFhUC9FVjBBL1M1M3N4NHB3cGZib2FMUGl4Rk1CL05CaU85UDJrdnZRWmE3RG1CL0lWME4vU3h5SjlMY2xpWDNyd0JyQXNwaGxlbEQ1eTZTdC9GQVVRUHdycHEwaW85TUZMWC94RFRDK0E5Q0ZJWDBLaXBZOWYrdnJ2Ti9wM0FPbVBQMzM5NkNGOWo1YkJxelMwQUl3c0hNaENoWnBZQUlZVnpwQytXUVBYYXR6dkFOSm5kQms1cGtSSW44d0c0ZkNxV1FYUTRBR243eGk5cGM5bmc0aDR5YUN2Z05JZmJmcHFNWWRkU3pIbERjQkV3bVhTeHpVOUx0WWJVUURwanpOOW5SZ29mV2pUUTJPbC9nV1EvaURURjRteDBrYzNQVHJXYUY0QTZZOHdmWVVZTG4yQTB3UGtXNTEvQ1p6KzhOS1hCOTZrYitMU2R4bDdGb0NCZzFLc1pFME5DOENvUVUzcHU5bHZNYnY5RGlCOXdwYU9Rd1p2MG1lN1FiejhwRlVCTkhnODZSc0N6NlZQZUlPUSthalBWMERwRHlaOU1XQTkyMXBFa3pjQTh3UkIwZ2MrUFhEZWRTaUE5SWVSdmd5d1FmcllwOGZPbS9nQ1NIOE02V3NBbTZVUGYzcjRMT2tGa1A0QTBoY0Fka3BmZ2ZRSVN2MGxjUHE5TC9takQwZXh6bmVKZkFNd0x0QkpnM1VJRGFXOE40RFFpLzZvd2JqREdkSzNPMjYxdzk0QTB1ZGpDUndSdUV6NmRzUUZWTkliUU56bC9pUjl1T0VhTnYweVNXOEFRZGY2V2ZUaDRVclJ5NUoxK0tRQ1dOSXU5MTNvc2VFdW9Tc1RkK3l3QWxnQ3J6anV3RkJCM09MRUhYaEpMSUFsNnFLRGpnclZCSzFQMEZFL2lpeUFGS0V6QVhWWW9sT2xGa0Q5c2FoL1FvaFFmNVhxbi9DUjFBSllhbDk2NWJOQm5Nb0xWZmxzMzByNk80QXZGZnhYaHFNSEFpcXJ0dS9weXg1ZkFFdWxtVWlmQnFqUHZoOG8rQ3VnZDBVZVE1RmpRRzlGRnEzSU1YYnFVQUJMZ1lkeCt3RmdqdHZYN2ZZREhLVkpBU3kzUHBJMjB3QXA3UHNoK2hUQVhUcE5Bd1N4ZXZ1MUtvRHJCOElJd28ycy9FNnRDbUM1OXZFMEd3VklaT1gzNkZZQXkxVVBxZDhvUUNncnYxbkRBbGpPZjFRdFJ3RnlXZmx0T3Z3aDJDTW4vY0ZJMTFHQUJzN1krc1lyMzdrQWxxT25vZkVjUUJ1MmZyMmVYd0c5Ty9EaDlaNERhTVBXcjllOEFJN1NmZzdnelYvLyt1ZmRSemlBaFYycGZ3SHNId1hEeEJCdjZhOERqdm9KOWZVdmdHWGZnNXd3QkxEOG1QczZZTWppanlpQVpldmpIRElFOERueEozZkFuTVdmVWdETDZ3OTF6aEF3M0tPc245a0JveFovVUFFc3J6emFVVVBBWk05VGZsb0hURnY4V1FXd3JIdkEwNGFBc2Riays1d09HTGo0emY4UTdKRkhmeW95Y0FJWTY2VmsvOGQvLzg5NUo3bVMzZjlvM0J2QUV6TW5nSmxlL2VmNkh1OEJpelgvMGRBQytEd0V4b0k1dHFWNTR3NFl1LzVEQzJENThaR1BmZndNdENmSFczYkE1UFdmV3dETC96LzR5WStmYWZZbmVMTU9HTDcrUTM4SkRBTWRtTjF0ZmljODNPZzNBSmpqMkg5eWIvTWVNSndDZ1A3T3lHc2QwSUFDZ09iT1Myb2RrRTRCUUdkblo3UU9pS1lBb0sxcjBsa0g1RklBME5PVnVhd0RRaWtBYU9qNlJOWUJpUlFBZEhOWEZ1dUFPQW9BV3JrM2hYVkFGZ1VBZlZUSTN3cG5ZQ1VGQUUzVVNkNDZKK0U1QlFBZFZNdmNhdWZoU3dvQTR0Vk0yNXFuNGlNRkFOa3E1MnpsczdFb0FJaFdQMkhybjNBeUJRQ3BVckkxNVp3REtRQ0lsSldxV2FlZFF3RkFuc1E4VFR4emV3b0F3dVFtYWU3SnUxSUFrQ1E5UTlQUDM0d0NnQmdOMHROL1RiNFVCUUFacEQrSFV3QVFRUHB6QmdVQTFVbC9UcUlBb0RUcHoza1VBTlFsL1RtVkFvQ2lwRDluVXdCUWtmVG5BZ29BeXBIK1hFTUJRQzNTbjhzb0FDaEUrbk1sQlFCVlNIOHVwZ0NnQk9uUDlSUUEzRS82Y3dzRkFEZVQvdHhGQWNDZHBEODNVZ0J3RytuUHZSUUEzRVA2Y3pzRkFEZVEvbFNnQU9CcTBwOGlGQUJjU3ZwVGh3S0E2MGgvU2xFQWNCSHBUelVLQUs0Zy9TbElBY0RwcEQ4MUtRQTRsL1NuTEFVQUo1TCtWS1lBNEN6U24rSVVBSnhDK2xPZkFvRGpTWDhpS0FBNG1QUW5oUUtBSTBsL2dpZ0FPSXowSjRzQ21LdEJXcFhTNEQ2bC96UUtZS2kzdEdxUVdVVTB1RW5wUDVBQ21PaGpXalZJcnRzMXVFUHBQNU1DR09keldqWElyeHMxdUQzcFA1WUNtT1ZSV2pWSXNWczB1RGZwUDVrQ0dPUjVXalhJc29zMXVESHBQNXdDbUdKTldqVkl0TXMwdUN2cGp3SVlZWDFhTmNpMUN6UzRKZW5Qb2dBbWVEV3RHcVRicVJyY2ovVG5qUUpvYmx0YU5jaTRrelM0R2VuUE93WFEyWjYwYXBCMGgydHdKOUtmanhSQVcvdlRxa0hlSGFqQmJVaC9mcUlBZWpvcXJScWszaUVhM0lQMDV6TUYwTkN4YWRVZyszWnFjQVBTbnk4cGdHN09TS3NHQ2JoWmc4OHUvWGxFQWJSeVhsbzF5TUVOR254cTZjOFRDcUNQczlPcVFScStwTUhubGY0OHB3Q2F1Q2F0R21UaVNnMCtxZlRuV3dxZ2d5dlRxa0V5ZnF2Qlo1VCtyS0VBNGwyZlZnM3k4WWtHbjA3NnM1SUN5SFpYV2pWSXlTODErRnpTbi9VVVFMQjcwNnBCVnY2a3dTZVMvcnhFQWFTcWtGWVZ6bkNVQnA5Rit2TXFCUkNwVGxyVk9ja2VEVDZGOUdjREJaQ25XbHBWTzgrcjBzKy9TSCsyVWdCaGFxWlZ6Vk90a1h2eWQ5S2Z6UlJBa3NwcFZmbHNqeVNlK1NmU256MFVRSXo2YVZYL2hCOWxuZlpMMHArZEZFQ0dsTFJ5enN0SWYvWlRBQUd5MHFyK2FldWY4RnZTbjBNb2dPb1MwNnJ5bVN1ZmJTWHB6MUVVUUdtNWFWWHo1RFZQOVJMcHo0RVVRRjNwYVZYdC9OWE9zNEgwNTFnS29LNEcyMTRuYyt1Y1pMTUc4MEExQ3FDMEJqdGZJWGtybkdHbkJwTkFRUXFndWdhYjcvKzFkS2NHTTBCTkNpQkFnLzMzM3kzWXJNSFRweXdGa0tGQkN2Z3ZsMjNRNExsVG1RS0kwU0FML0xlTFg5TGdpVk9jQWtqU0lCR3V5V1hwRDJzb2dEQU5jdUhzZEpiK3NKSUN5Tk1nSGM3TGFPa1A2eW1BU0EweTRveWtsdjd3RWdXUXFrRlNISnZYMGg5ZXBRQ0NOY2lMbzFKYitzTUdDaUJiZzlUWW45M1NIN1pSQVBFYVpNZWVCSmYrc0prQzZLQkJnbXpMY2VrUGV5aUFKaHJreUt0cEx2MWhKd1hRUjRNMFdaL3AwaC8yVXdDdE5NaVVOY2t1L2VFUUNxQ2JCc255UE4rbFB4eEZBVFRVSUY4ZXBiejBod01wZ0o0YXBNem5ySmYrY0N3RjBGYURyUG1ZK05JZkRxY0FPbXVRT0crNUwvM2hETC84K3R2dmQ1K0JjelZJejNUU241cThBZlFuZmU3bC9pbExBWXdnZys3aTVxbE1BVXdoaWE3bnppbE9BUXdpajY3a3RxbFBBY3dpbGE3aG5vbWdBTWFSVFdkenc2UlFBQk5KcVBPNFc0SW9nS0hrMUJuY0tsa1V3RnpTNmxqdWt6Z0tZRFNaZFJRM1NTSUZNSjNrMnM4ZEVrb0JJTDkyY1h2a1VnQXNpeFRieXIwUlRRSHdOMW4yS2pkR09nWEFmMGkwOWR3VkRTZ0FmaURYMW5CTDlLQUErSmwwZTg3OTBJWUM0QXN5N2hFM1F5Y0tnSzlKdXMvY0NjMG9BQjZTZHgrNURmcFJBRHdqOWQ2NEIxcFNBSHhEOXJrQnVsSUFmRzl5QWs3KzdMU25BRmhsWmc3Ty9OVE1vUUJZYTFvYVR2dThES1FBZU1HY1RKenpTWmxNQWZDYUNjazQ0VFBDb2dEWW9IYys5djUwOEpFQ1lJdXVLZG4xYzhHWEZBQWI5Y3ZLZnA4SW5sTUFiTmNwTVR0OUZsaEpBYkJMajl6czhTbmdWUXFBdmRMVE0vMzhzSmtDNEFDNUdacDdjdGhQQVhDTXhDUk5QRE1jU0FGd21Ldzh6VG90bkVFQmNLU1VWRTA1SjV4S0FYQ3crdGxhLzRSd0RRWEE4U29uYk9XendjVVVBS2VvbWJNMVR3VjNVUUNjcFZyYVZqc1AzRTRCY0tJNm1Wdm5KRkNIQXVCY0ZaSzN3aG1nSUFYQTZlN05YK2tQanlnQXJuQlhDa3QvZUVJQmNKSHJzMWo2dzNNS2dPdGNtY2pTSDc2bEFMalVXeTZmbDg1bi8zem81SmRmZi92OTdqTXcxRi8vK3VlQlAwM293NnU4QVhDYkF5TmIrc01HM2dDNDM1NVhBZEVQbXlrQXFuaTFCa1EvN0tRQUtPZDVFOGg5T0lvQ0FCaktMNEVCaGxJQUFFTXBBSUNoRkFEQVVBb0FZQ2dGQURDVUFnQVlTZ0VBREtVQUFJWlNBQUJES1FDQW9SUUF3RkFLQUdBb0JRQXdsQUlBR0VvQkFBeWxBQUNHVWdBQVF5a0FnS0VVQU1CUUNnQmdLQVVBTUpRQ0FCaEtBUUFNcFFBQWhsSUFBRU1wQUlDaEZBREFVQW9BWUNnRkFEQ1VBZ0FZU2dFQURLVUFBSVpTQUFCREtRQ0FvUlFBd0ZBS0FHQW9CUUF3bEFJQUdFb0JBQXlsQUFDR1VnQUFReWtBZ0tFVUFNQlFDZ0JnS0FVQU1KUUNBQmhLQVFBTXBRQUFobElBQUVNcEFJQ2hGQURBVUFvQVlDZ0ZBRENVQWdBWVNnRUFES1VBQUlaU0FBQkRLUUNBb1JRQXdGQUtBR0FvQlFBd2xBSUFHRW9CQUF5bEFBQ0dVZ0FBUXlrQWdLRVVBTUJRQ2dCZ0tBVUFNSlFDQUJoS0FRQU1wUUFBaGxJQUFFTXBBSUNoRkFEQVVBb0FZQ2dGQURDVUFnQVlTZ0VBREtVQUFJWlNBQUJES1FDQW9SUUF3RkFLQUdBb0JRQXdsQUlBR0VvQkFBeWxBQUNHVWdBQVF5a0FnS0VVQU1CUUNnQmdLQVVBTUpRQ0FCanEzNUNmUFFGTEk0S2xBQUFBQUVsRlRrU3VRbUNDIiwic2l6ZXMiOiI1MTJ4NTEyIiwidHlwZSI6ImltYWdlL3BuZyIsInB1cnBvc2UiOiJhbnkgbWFza2FibGUifV19">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAFqElEQVR4nO3d23UbVwxAUTgN2F04ZSQNpB3X4HbcgNtwGSohH5NFM+JDwwvg4nXOr7yk0WATw4dofvr89S8hWu2P6AOg2gGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAHofV++/bP81YEB6H8dPh4pef7VmQHod9cybpU8/+rYAPRfr4rB0BGARFavWRgSkU/D31ioR/D2/YfJkRRtNCDDFTKW0dxLmO0FaOzlbCggj3nPNDQRkN+kBxoaB8h7xtMMzQK0Z7qjDA0CtHOucwxNAbR/okMM9X8eKHaQ7Z8far6BwtdA+AF413kDpRpe11XUFpCJnsvUbb9bp3pewsznbTL7VBvRqoaAnLYFhu7WDZDrtQZDt7UCtOGeCobe1QfQtvu5GLquw6Mwq2G8JIPHZUflN1CInoV/f7cGe6j2BgpfA+EHEF7hDZRheOyhqhsog57rsh3PtkpuoITTGruK6gFKqMfwe5YzVAxQWj2G37mWoUqAkusx/P6FDNW4Ex31ZM9yJaybVGADldNj9bNK7KHsG6j0Tbn0wZ8s9QaqPoAJeygvoOp6DA8gs6Gkl7Aeei5VvBt3soyAmum51PL3SncJa3mWj1peznIBaqznqJ+hLJewxvcSbut0O0mxgUbpkV57KH4Ddbo5vlSPXzx4A/U4iWv12EORgCbrOWpgKAwQeo6qG4oBhJ7rShsKuBONnkdVPDO7N1DFc7Stiqto3waa9mTPcrVuY5s2EHrOV2sP7dhAtW5SSapy0tw3UJUTka0qe8gXEHo0lTDkCAg9+vIb8gKEHquSG3IBhB7bMhuyfxSGHqdyPhViCSjnb9isbLdPs0sYevaU7XJms4Gy3Szal+eEG2ygPL/MnPLsIS0g9ESVxJAWkP7XQM9yGU6+wSVMcxDoURZ+8m0eha0dCnpMij35Zg/jQz4qgI4CT77lSxnnDws95kWd/IB3ZaDHqbfvP/afW2NAH35aG3ru9vbrp9m38v/AvOvsN5Dr50W27NCzwZDHCFwuYU6fWNuyazeuhpxG4HUfyPwzs1t2K8bJkN8IHO9EHweNnkc9smJuyHUE8f8/0Mw+VPLlz7/3HImyFP9D2bTO7BjDPeQagHZ3XkYJQwDa2qsm8hsC0L7WNCQ3BKBNaRxkNgSgHekFpDUEIPesZp/TEIB8M5x6zmeGAORYez0CIL8m6BEAOTVEjwDIozl6BEDmjdIjALJtmh4BkGED9QiArJqpRwBk0lg9AiB9k/VIdUDhLw8N1yOlAZm/nWrtAEwqqkfq/lH9u+FtHoCt2rp6pOgGcn071cJP11Raj1QEtOHtVAs/fa3qeqQcoOfz8zaEntsqAYp9OxV67lYGUOzbqdDzqBqAYt9OhZ4nFQAU+3Yq9DwvO6DYt1Oh58NSA4oVgJ4z5QUUew1Cz8nyAjI86bH3wRvrkfyvhe1/wZKXSF8q7wY62ryH0PNq2QHJRkPoWagAINliCD1r1QAkzobQs1wZQOJmCD2aKgESB0PoUZb9Yfzdwv+W/raZeqTcBjrKNq1sx7OzkoAk08zyHElIVQFJjsllOIbYCgOS6PmhR6oDkrgpoueoPCCJmCV6LnUAJHsnip7rmgCSXXNFz7v6ABL/6aLntlaAxHPG6LlbN0DiM2n0PKohILGeN3qe1BOQ2E0dPc9rC0gsZo+eD+sMSHQC0HOm5oBk1QF6TtYfkLyuAT3nGwFIXjGBnpcq+Setmh79OSxu1pqygS7dhYKe5cZtILJt3AYi2wBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqv4FW5W53AtQ+kMAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAFqElEQVR4nO3d23UbVwxAUTgN2F04ZSQNpB3X4HbcgNtwGSohH5NFM+JDwwvg4nXOr7yk0WATw4dofvr89S8hWu2P6AOg2gGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAGIVAHofV++/bP81YEB6H8dPh4pef7VmQHod9cybpU8/+rYAPRfr4rB0BGARFavWRgSkU/D31ioR/D2/YfJkRRtNCDDFTKW0dxLmO0FaOzlbCggj3nPNDQRkN+kBxoaB8h7xtMMzQK0Z7qjDA0CtHOucwxNAbR/okMM9X8eKHaQ7Z8far6BwtdA+AF413kDpRpe11XUFpCJnsvUbb9bp3pewsznbTL7VBvRqoaAnLYFhu7WDZDrtQZDt7UCtOGeCobe1QfQtvu5GLquw6Mwq2G8JIPHZUflN1CInoV/f7cGe6j2BgpfA+EHEF7hDZRheOyhqhsog57rsh3PtkpuoITTGruK6gFKqMfwe5YzVAxQWj2G37mWoUqAkusx/P6FDNW4Ex31ZM9yJaybVGADldNj9bNK7KHsG6j0Tbn0wZ8s9QaqPoAJeygvoOp6DA8gs6Gkl7Aeei5VvBt3soyAmum51PL3SncJa3mWj1peznIBaqznqJ+hLJewxvcSbut0O0mxgUbpkV57KH4Ddbo5vlSPXzx4A/U4iWv12EORgCbrOWpgKAwQeo6qG4oBhJ7rShsKuBONnkdVPDO7N1DFc7Stiqto3waa9mTPcrVuY5s2EHrOV2sP7dhAtW5SSapy0tw3UJUTka0qe8gXEHo0lTDkCAg9+vIb8gKEHquSG3IBhB7bMhuyfxSGHqdyPhViCSjnb9isbLdPs0sYevaU7XJms4Gy3Szal+eEG2ygPL/MnPLsIS0g9ESVxJAWkP7XQM9yGU6+wSVMcxDoURZ+8m0eha0dCnpMij35Zg/jQz4qgI4CT77lSxnnDws95kWd/IB3ZaDHqbfvP/afW2NAH35aG3ru9vbrp9m38v/AvOvsN5Dr50W27NCzwZDHCFwuYU6fWNuyazeuhpxG4HUfyPwzs1t2K8bJkN8IHO9EHweNnkc9smJuyHUE8f8/0Mw+VPLlz7/3HImyFP9D2bTO7BjDPeQagHZ3XkYJQwDa2qsm8hsC0L7WNCQ3BKBNaRxkNgSgHekFpDUEIPesZp/TEIB8M5x6zmeGAORYez0CIL8m6BEAOTVEjwDIozl6BEDmjdIjALJtmh4BkGED9QiArJqpRwBk0lg9AiB9k/VIdUDhLw8N1yOlAZm/nWrtAEwqqkfq/lH9u+FtHoCt2rp6pOgGcn071cJP11Raj1QEtOHtVAs/fa3qeqQcoOfz8zaEntsqAYp9OxV67lYGUOzbqdDzqBqAYt9OhZ4nFQAU+3Yq9DwvO6DYt1Oh58NSA4oVgJ4z5QUUew1Cz8nyAjI86bH3wRvrkfyvhe1/wZKXSF8q7wY62ryH0PNq2QHJRkPoWagAINliCD1r1QAkzobQs1wZQOJmCD2aKgESB0PoUZb9Yfzdwv+W/raZeqTcBjrKNq1sx7OzkoAk08zyHElIVQFJjsllOIbYCgOS6PmhR6oDkrgpoueoPCCJmCV6LnUAJHsnip7rmgCSXXNFz7v6ABL/6aLntlaAxHPG6LlbN0DiM2n0PKohILGeN3qe1BOQ2E0dPc9rC0gsZo+eD+sMSHQC0HOm5oBk1QF6TtYfkLyuAT3nGwFIXjGBnpcq+Setmh79OSxu1pqygS7dhYKe5cZtILJt3AYi2wBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqgBEqv4FW5W53AtQ+kMAAAAASUVORK5CYII=">
+<style>
+/* =========================================================
+   A&B FieldOps — mobile-first field app
+   Design rules: huge targets, one decision per screen,
+   nothing important smaller than 17px.
+   ========================================================= */
+
+:root{
+  --navy:#0F2740;
+  --navy-2:#17395C;
+  --teal:#1F9E8E;
+  --teal-d:#178073;
+  --amber:#E8942A;
+  --red:#D64545;
+  --green:#2E9E5B;
+  --bg:#F2F5F8;
+  --card:#FFFFFF;
+  --line:#DDE4EB;
+  --txt:#12212F;
+  --txt-2:#5A6B7B;
+  --txt-3:#8C9AA8;
+  --r:16px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+  --tabh:64px;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--txt);
+  font-size:17px;line-height:1.4;
+  overscroll-behavior-y:none;
+  -webkit-font-smoothing:antialiased;
+}
+button{font-family:inherit;font-size:inherit;border:0;background:none;color:inherit;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:17px;color:var(--txt)}
+.hidden{display:none !important}
+
+/* ---------- header ---------- */
+#topbar{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  padding:calc(var(--safe-t) + 12px) 16px 12px;
+  background:var(--navy);color:#fff;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:12px;
+  box-shadow:0 1px 0 rgba(0,0,0,.15);
+}
+#tbTitle{font-size:26px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
+#tbSub{font-size:13px;color:#9FB6CC;margin-top:3px;font-weight:600;letter-spacing:.2px}
+.tb-btn{color:#9FB6CC;padding:8px;margin:-8px;border-radius:12px}
+.tb-btn:active{background:rgba(255,255,255,.12)}
+
+/* ---------- main ---------- */
+#main{
+  padding:calc(var(--safe-t) + 84px) 12px calc(var(--tabh) + var(--safe-b) + 96px);
+  min-height:100%;
+}
+
+/* ---------- tab bar ---------- */
+#tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;
+  height:calc(var(--tabh) + var(--safe-b));
+  padding-bottom:var(--safe-b);
+  background:#fff;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.tab{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  color:var(--txt-3);font-size:11px;font-weight:700;position:relative;
+  letter-spacing:.2px;
+}
+.tab svg{width:26px;height:26px}
+.tab.active{color:var(--navy)}
+.badge{
+  position:absolute;top:6px;right:calc(50% - 26px);
+  min-width:19px;height:19px;padding:0 5px;border-radius:10px;
+  background:var(--red);color:#fff;font-size:11px;font-weight:800;
+  display:none;align-items:center;justify-content:center;font-style:normal;
+}
+.badge.show{display:flex}
+.badge.amber{background:var(--amber)}
+
+/* ---------- FAB ---------- */
+#fab{
+  position:fixed;right:16px;bottom:calc(var(--tabh) + var(--safe-b) + 16px);z-index:41;
+  width:60px;height:60px;border-radius:30px;background:var(--teal);color:#fff;
+  box-shadow:0 6px 20px rgba(31,158,142,.45);
+  display:flex;align-items:center;justify-content:center;
+}
+#fab svg{width:32px;height:32px}
+#fab:active{transform:scale(.94)}
+
+/* ---------- big status strip ---------- */
+.strip{
+  border-radius:var(--r);padding:18px 18px;margin:0 0 14px;color:#fff;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);
+}
+.strip.clear{background:linear-gradient(135deg,#1B7F53 0%,#2E9E5B 100%)}
+.strip h2{margin:0;font-size:30px;font-weight:800;letter-spacing:-.6px}
+.strip p{margin:4px 0 0;font-size:14px;color:#C6D6E4;font-weight:600}
+.strip.clear p{color:#D6F0E1}
+
+/* ---------- section headings ---------- */
+.sec{display:flex;align-items:center;gap:8px;margin:20px 4px 10px}
+.sec h3{margin:0;font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--txt-2)}
+.sec .dot{width:9px;height:9px;border-radius:5px;background:var(--txt-3)}
+.sec.red .dot{background:var(--red)} .sec.red h3{color:var(--red)}
+.sec.amber .dot{background:var(--amber)} .sec.amber h3{color:#B0701A}
+.sec .count{margin-left:auto;font-size:13px;font-weight:800;color:var(--txt-3)}
+
+/* ---------- cards ---------- */
+.card{
+  background:var(--card);border-radius:var(--r);border:1px solid var(--line);
+  margin-bottom:10px;overflow:hidden;
+}
+.card.flag-red{border-left:5px solid var(--red)}
+.card.flag-amber{border-left:5px solid var(--amber)}
+.card.flag-teal{border-left:5px solid var(--teal)}
+.card.flag-grey{border-left:5px solid var(--txt-3)}
+
+.crow{display:flex;align-items:stretch}
+.cbody{flex:1;padding:14px 14px 14px 14px;min-width:0}
+.ctitle{font-size:18px;font-weight:700;letter-spacing:-.2px;margin:0 0 3px;line-height:1.25}
+.cmeta{font-size:13.5px;color:var(--txt-2);font-weight:600;display:flex;flex-wrap:wrap;gap:4px 10px}
+.cmeta .job{color:var(--navy);font-weight:800}
+.cmeta .late{color:var(--red);font-weight:800}
+.cnote{font-size:14px;color:var(--txt-2);margin-top:6px;white-space:pre-wrap}
+
+.cdone{
+  width:64px;flex:0 0 64px;display:flex;align-items:center;justify-content:center;
+  border-left:1px solid var(--line);color:var(--txt-3);
+}
+.cdone svg{width:30px;height:30px}
+.cdone:active{background:#EAF7F1;color:var(--green)}
+
+/* ---------- pills / chips ---------- */
+.pill{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:3px 9px;border-radius:20px;font-size:11.5px;font-weight:800;
+  letter-spacing:.4px;text-transform:uppercase;
+}
+.p-check{background:#E6F1FA;color:#17395C}
+.p-material{background:#FDF0DC;color:#8A5A12}
+.p-inspection{background:#F2E7FB;color:#5B2E86}
+.p-sub{background:#E4F6F2;color:#136B60}
+.p-followup{background:#FDE7E7;color:#9E2B2B}
+.p-other{background:#EDF1F5;color:#4A5A69}
+.p-punch{background:#E9EEF7;color:#2C4670}
+.p-safety{background:#FBE9E4;color:#8C3A1E}
+/* signature pad */
+.sigwrap{background:#fff;border:2px dashed #B9C6D2;border-radius:12px;overflow:hidden}
+.sigwrap canvas{display:block;width:100%;height:170px;touch-action:none}
+.punchrow{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:12px 14px;margin-bottom:8px}
+.punchrow .t{flex:1;font-size:16px;font-weight:600}
+.punchrow .t.off{text-decoration:line-through;color:var(--txt-3)}
+.punchrow button{width:40px;height:40px;border-radius:20px;background:#EDF1F5;color:var(--txt-2);
+  display:flex;align-items:center;justify-content:center;font-size:20px;flex:0 0 auto}
+.punchrow button.on{background:#E4F5EA;color:#1E7443}
+.p-done{background:#E4F5EA;color:#1E7443}
+
+/* ---------- action row under card ---------- */
+.cacts{display:flex;border-top:1px solid var(--line)}
+.cacts button{
+  flex:1;padding:12px 6px;font-size:13.5px;font-weight:800;color:var(--txt-2);
+  letter-spacing:.2px;
+}
+.cacts button + button{border-left:1px solid var(--line)}
+.cacts button:active{background:#F2F5F8}
+.cacts .danger{color:var(--red)}
+
+/* ---------- site tiles ---------- */
+.site{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  margin-bottom:10px;padding:14px;
+}
+.site h4{margin:0 0 2px;font-size:19px;font-weight:800;letter-spacing:-.3px}
+.site .addr{font-size:13.5px;color:var(--txt-2);font-weight:600}
+.site .row{display:flex;gap:8px;margin-top:12px}
+.site .row button{
+  flex:1;padding:13px 8px;border-radius:12px;font-weight:800;font-size:15px;
+  background:#EDF1F5;color:var(--navy);
+}
+.site .row button.go{background:var(--teal);color:#fff}
+.site .row button.done{background:#E4F5EA;color:#1E7443}
+.stat{display:flex;gap:14px;margin-top:10px;font-size:13px;font-weight:700;color:var(--txt-2)}
+.stat .n{color:var(--red)}
+.stat .ok{color:var(--green)}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:block;width:100%;padding:17px;border-radius:14px;
+  font-size:17px;font-weight:800;text-align:center;letter-spacing:-.1px;
+}
+.btn:active{transform:scale(.99)}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-ghost{background:#EDF1F5;color:var(--navy)}
+.btn-danger{background:#FDE7E7;color:var(--red)}
+.btn + .btn{margin-top:10px}
+.btn[disabled]{opacity:.4}
+
+/* ---------- forms ---------- */
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:800;letter-spacing:.5px;
+  text-transform:uppercase;color:var(--txt-2);margin-bottom:6px}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px;border:1.5px solid var(--line);border-radius:12px;
+  background:#fff;outline:none;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal)}
+.field textarea{min-height:90px;resize:vertical}
+.hint{font-size:13px;color:var(--txt-3);margin-top:6px;font-weight:600}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  padding:11px 14px;border-radius:12px;background:#EDF1F5;color:var(--navy);
+  font-weight:700;font-size:15px;border:1.5px solid transparent;
+}
+.chip.on{background:var(--navy);color:#fff}
+.chip.on.teal{background:var(--teal)}
+
+/* ---------- sheet ---------- */
+/* NOTE: must sit ABOVE #flow (z-index 70) — the guided site check opens sheets. */
+#sheetWrap{position:fixed;inset:0;z-index:80}
+#sheetBackdrop{position:absolute;inset:0;background:rgba(10,20,30,.5)}
+#sheet{
+  position:absolute;left:0;right:0;bottom:0;max-height:92vh;overflow-y:auto;
+  background:var(--bg);border-radius:22px 22px 0 0;
+  padding:8px 16px calc(28px + var(--safe-b));
+  animation:up .22s cubic-bezier(.2,.8,.3,1);
+  -webkit-overflow-scrolling:touch;
+}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+#sheetGrab{width:40px;height:5px;border-radius:3px;background:#C8D2DC;margin:6px auto 14px}
+#sheetBody h2{margin:0 0 4px;font-size:24px;font-weight:800;letter-spacing:-.5px}
+#sheetBody .sub{margin:0 0 18px;font-size:14px;color:var(--txt-2);font-weight:600}
+
+/* ---------- flow (full screen guided check) ---------- */
+#flow{
+  position:fixed;inset:0;z-index:70;background:var(--bg);
+  display:flex;flex-direction:column;
+}
+.fl-top{
+  background:var(--navy);color:#fff;padding:calc(var(--safe-t) + 12px) 16px 14px;
+}
+.fl-top .r{display:flex;align-items:center;justify-content:space-between}
+.fl-x{color:#9FB6CC;font-size:15px;font-weight:800;padding:6px 2px}
+.fl-job{font-size:13px;color:#9FB6CC;font-weight:700;letter-spacing:.3px}
+.fl-bar{height:5px;background:rgba(255,255,255,.18);border-radius:3px;margin-top:12px;overflow:hidden}
+.fl-bar i{display:block;height:100%;background:var(--teal);border-radius:3px;transition:width .25s}
+.fl-body{flex:1;overflow-y:auto;padding:26px 18px 18px;-webkit-overflow-scrolling:touch}
+.fl-q{font-size:30px;font-weight:800;letter-spacing:-.7px;line-height:1.15;margin:0 0 6px}
+.fl-help{font-size:15px;color:var(--txt-2);font-weight:600;margin:0 0 24px}
+.fl-foot{padding:12px 16px calc(16px + var(--safe-b));background:var(--bg);border-top:1px solid var(--line)}
+
+.bigpick{display:grid;gap:12px}
+.bigpick button{
+  padding:22px 18px;border-radius:16px;background:#fff;border:2px solid var(--line);
+  font-size:19px;font-weight:800;text-align:left;color:var(--txt);
+}
+.bigpick button.yes{border-color:var(--green);background:#EDF9F1;color:#1E7443}
+.bigpick button.no{border-color:var(--red);background:#FDEEEE;color:#A93030}
+.bigpick button:active{transform:scale(.985)}
+.bigpick small{display:block;font-size:14px;font-weight:600;color:var(--txt-2);margin-top:4px}
+
+.stepper{display:flex;align-items:center;justify-content:center;gap:22px;margin:10px 0 6px}
+.stepper button{
+  width:74px;height:74px;border-radius:37px;background:#fff;border:2px solid var(--line);
+  font-size:34px;font-weight:800;color:var(--navy);display:flex;align-items:center;justify-content:center;
+}
+.stepper .val{font-size:60px;font-weight:800;min-width:90px;text-align:center;letter-spacing:-2px}
+
+.photogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.photogrid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.photogrid .add{
+  aspect-ratio:1;border:2px dashed #B9C6D2;border-radius:10px;display:flex;
+  align-items:center;justify-content:center;color:var(--txt-3);font-size:32px;background:#fff;
+}
+
+/* ---------- report ---------- */
+.rep{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  padding:16px;font-size:15px;white-space:pre-wrap;line-height:1.55;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+/* ---------- empty ---------- */
+.empty{text-align:center;padding:46px 24px;color:var(--txt-3)}
+.empty .big{font-size:52px;margin-bottom:10px}
+.empty h4{margin:0 0 6px;font-size:20px;color:var(--txt-2);font-weight:800}
+.empty p{margin:0;font-size:15px;font-weight:600}
+
+/* ---------- toast ---------- */
+#toast{
+  position:fixed;left:16px;right:16px;bottom:calc(var(--tabh) + var(--safe-b) + 84px);z-index:95;
+  background:var(--navy);color:#fff;padding:14px 16px;border-radius:14px;
+  font-size:15px;font-weight:700;text-align:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+/* ---------- misc ---------- */
+.divider{height:1px;background:var(--line);margin:18px 0}
+.tiny{font-size:12.5px;color:var(--txt-3);font-weight:600;text-align:center;margin-top:18px;line-height:1.5}
+.warn{background:#FFF6E5;border:1px solid #F0DCB4;color:#7A5510;border-radius:12px;
+  padding:12px 14px;font-size:14px;font-weight:600;margin-bottom:14px}
+
+/* ---------- site picker ---------- */
+.pksearch{
+  width:100%;margin-top:12px;padding:13px 14px;border-radius:12px;border:0;
+  background:rgba(255,255,255,.14);color:#fff;font-size:16px;font-weight:600;outline:none;
+}
+.pksearch::placeholder{color:#8FA6BC}
+.pksearch:focus{background:rgba(255,255,255,.2)}
+.pkhint{font-size:12.5px;color:#9FB6CC;font-weight:600;margin-top:10px;letter-spacing:.2px}
+
+.pkrow{
+  display:flex;align-items:center;gap:13px;width:100%;text-align:left;
+  background:#fff;border:1.5px solid var(--line);border-radius:14px;
+  padding:14px 14px;margin-bottom:9px;
+}
+.pkrow.on{border-color:var(--teal);background:#EDFAF7}
+.pkrow.have{opacity:.5}
+.pkrow:active{transform:scale(.995)}
+.pkbox{
+  flex:0 0 auto;width:28px;height:28px;border-radius:8px;
+  border:2px solid #C3CFDA;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:900;color:#fff;
+}
+.pkrow.on .pkbox{background:var(--teal);border-color:var(--teal)}
+.pkrow.have .pkbox{background:var(--txt-3);border-color:var(--txt-3)}
+.pktxt{flex:1;min-width:0;display:block}
+.pkname{display:block;font-size:16px;font-weight:700;color:var(--txt);line-height:1.3}
+.pkaddr{display:block;font-size:13px;font-weight:600;color:var(--txt-2);margin-top:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pktag{flex:0 0 auto;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--txt-3)}
+
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ============ HEADER ============ -->
+  <header id="topbar">
+    <div class="tb-left">
+      <div id="tbTitle">Today</div>
+      <div id="tbSub"></div>
+    </div>
+    <button class="tb-btn" id="btnSettings" aria-label="Settings">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 8a4 4 0 100 8 4 4 0 000-8zm0 6a2 2 0 110-4 2 2 0 010 4z"/><path fill="currentColor" d="M19.4 13a7.8 7.8 0 000-2l2-1.6-2-3.4-2.4 1a7.6 7.6 0 00-1.7-1L14.9 3H9.1l-.4 2.6a7.6 7.6 0 00-1.7 1l-2.4-1-2 3.4L4.6 11a7.8 7.8 0 000 2l-2 1.6 2 3.4 2.4-1c.5.4 1.1.8 1.7 1l.4 2.6h5.8l.4-2.6c.6-.2 1.2-.6 1.7-1l2.4 1 2-3.4-2-1.6z" opacity=".35"/></svg>
+    </button>
+  </header>
+
+  <!-- ============ MAIN SCROLL AREA ============ -->
+  <main id="main"></main>
+
+  <!-- ============ BOTTOM NAV ============ -->
+  <nav id="tabbar">
+    <button class="tab active" data-tab="today">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20 8l-1.4-1.4z"/></svg>
+      <span>Today</span>
+      <i class="badge" id="badgeToday"></i>
+    </button>
+    <button class="tab" data-tab="sites">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 9h3v11h6v-6h2v6h6V9h3z"/></svg>
+      <span>Sites</span>
+    </button>
+    <button class="tab" data-tab="waiting">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6V6h-2v7.4l5 3 1-1.7z"/></svg>
+      <span>Waiting</span>
+      <i class="badge" id="badgeWaiting"></i>
+    </button>
+    <button class="tab" data-tab="report">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4zm0 5h16v2H4zm0 5h10v2H4zm0 5h10v2H4z"/></svg>
+      <span>Report</span>
+    </button>
+  </nav>
+
+  <!-- ============ FLOATING ADD ============ -->
+  <button id="fab" aria-label="Add">
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg>
+  </button>
+
+</div>
+
+<!-- ============ SHEET / MODAL LAYER ============ -->
+<div id="sheetWrap" class="hidden">
+  <div id="sheetBackdrop"></div>
+  <div id="sheet">
+    <div id="sheetGrab"></div>
+    <div id="sheetBody"></div>
+  </div>
+</div>
+
+<!-- ============ FULLSCREEN FLOW LAYER (site check) ============ -->
+<div id="flow" class="hidden"></div>
+
+<!-- ============ TOAST ============ -->
+<div id="toast" class="hidden"></div>
+<script>
+/* =========================================================================
+   A&B FieldOps  —  job-site management for a project manager who forgets.
+   Design contract:
+     1. The app remembers. The human never has to.
+     2. One screen tells him what to do next. Nothing is buried.
+     3. Nothing disappears until it is closed out or explicitly killed.
+     4. Works with no signal. Syncs when there is signal.
+   ========================================================================= */
+
+'use strict';
+
+/* ------------------------------------------------------------------ utils */
+const $  = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const esc = s => String(s == null ? '' : s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+const DAY = 86400000;
+const todayISO = () => {
+  const d = new Date();
+  return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+};
+const addDaysISO = (iso, n) => {
+  const d = new Date(iso + 'T12:00:00');
+  d.setDate(d.getDate() + n);
+  return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+};
+const daysBetween = (a, b) =>
+  Math.round((new Date(b + 'T12:00:00') - new Date(a + 'T12:00:00')) / DAY);
+const dowOf = iso => new Date(iso + 'T12:00:00').getDay();          // 0 Sun .. 6 Sat
+const prettyDate = iso => new Date(iso + 'T12:00:00')
+  .toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+const longDate = iso => new Date(iso + 'T12:00:00')
+  .toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+
+function toast(msg, ms = 2200) {
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.remove('hidden');
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => t.classList.add('hidden'), ms);
+}
+function buzz(ms = 12) { if (navigator.vibrate) try { navigator.vibrate(ms); } catch (e) {} }
+
+/* --------------------------------------------------------------- photo db */
+const PhotoDB = (() => {
+  let dbp = null;
+  function open() {
+    if (dbp) return dbp;
+    dbp = new Promise((res, rej) => {
+      const r = indexedDB.open('abfo-photos', 1);
+      r.onupgradeneeded = () => r.result.createObjectStore('p');
+      r.onsuccess = () => res(r.result);
+      r.onerror = () => rej(r.error);
+    });
+    return dbp;
+  }
+  return {
+    async put(id, dataUrl) {
+      const db = await open();
+      return new Promise((res, rej) => {
+        const tx = db.transaction('p', 'readwrite');
+        tx.objectStore('p').put(dataUrl, id);
+        tx.oncomplete = res; tx.onerror = () => rej(tx.error);
+      });
+    },
+    async get(id) {
+      const db = await open();
+      return new Promise((res) => {
+        const tx = db.transaction('p', 'readonly');
+        const q = tx.objectStore('p').get(id);
+        q.onsuccess = () => res(q.result || null);
+        q.onerror = () => res(null);
+      });
+    },
+    async del(id) {
+      const db = await open();
+      return new Promise(res => {
+        const tx = db.transaction('p', 'readwrite');
+        tx.objectStore('p').delete(id);
+        tx.oncomplete = res; tx.onerror = res;
+      });
+    }
+  };
+})();
+
+/* ------------------------------------------------------------------ state */
+const KEY = 'abfo.state.v1';
+
+const DEFAULT_SETTINGS = {
+  pmName: '',
+  ownerName: 'Drew',
+  ownerPhone: '',
+  ownerEmail: '',
+  company: 'Arnold & Blanc',
+  lastRoll: '',
+  onboarded: false,
+  reminders: false,
+  lastReportSent: ''
+};
+
+let S = null;
+
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) { S = JSON.parse(raw); }
+  } catch (e) { console.warn('load failed', e); }
+  if (!S || typeof S !== 'object') S = { jobs: [], items: [], logs: [], settings: {} };
+  S.jobs  = S.jobs  || [];
+  S.items = S.items || [];
+  S.logs  = S.logs  || [];
+  S.talks = S.talks || [];
+  S.catalog = S.catalog || [];   // JobTread jobs available to pick from
+  S.settings = Object.assign({}, DEFAULT_SETTINGS, S.settings || {});
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(S)); }
+  catch (e) { toast('Storage full — delete some old photos'); }
+}
+
+/* ------------------------------------------------------------- job sites */
+/* No job list is baked into this file, on purpose. Free static hosting serves
+   this code publicly, and client names and street addresses do not belong on
+   the open web. Sites arrive via a setup link instead. */
+
+/* ---------------------------------------------------------- setup links ---
+   The whole setup is one link. Drew builds it in the app and texts it; the PM
+   taps it and the sites are just there. No download, no file, no import screen.
+   Site data rides in the URL fragment, which is never sent to the server and
+   never lands in the public code. */
+
+function bytesToB64u(bytes) {
+  let bin = '';
+  bytes.forEach(b => { bin += String.fromCharCode(b); });
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function b64uToBytes(b64u) {
+  const b64 = b64u.replace(/-/g, '+').replace(/_/g, '/');
+  const bin = atob(b64);
+  return Uint8Array.from(bin, c => c.charCodeAt(0));
+}
+function b64uEncode(str) { return bytesToB64u(new TextEncoder().encode(str)); }
+function b64uDecode(b64u) { return new TextDecoder().decode(b64uToBytes(b64u)); }
+
+/* A setup link travels through a text message, and messaging apps quietly
+   truncate very long URLs — which produces an app that looks fine and is simply
+   missing its job list. So the payload is gzipped before encoding: roughly 3x
+   smaller, and a handful of sites lands near 400 characters. */
+async function packPayload(obj) {
+  const json = JSON.stringify(obj);
+  if (typeof CompressionStream === 'function') {
+    try {
+      const stream = new Blob([json]).stream().pipeThrough(new CompressionStream('gzip'));
+      const buf = await new Response(stream).arrayBuffer();
+      return 'z=' + bytesToB64u(new Uint8Array(buf));
+    } catch (e) { /* fall through to plain */ }
+  }
+  return 's=' + b64uEncode(json);
+}
+async function unpackPayload(kind, blob) {
+  if (kind === 'z') {
+    if (typeof DecompressionStream !== 'function') throw new Error('gzip unsupported');
+    const stream = new Blob([b64uToBytes(blob)]).stream().pipeThrough(new DecompressionStream('gzip'));
+    return JSON.parse(await new Response(stream).text());
+  }
+  return JSON.parse(b64uDecode(blob));
+}
+
+/* Read ?s= / #s= on boot, load the sites, then scrub the URL so the addresses
+   don't sit in his browser history or get re-shared by accident. */
+async function consumeSetupLink() {
+  const raw = (location.hash || '').replace(/^#/, '') || (location.search || '').replace(/^\?/, '');
+  if (!raw) return false;
+  const m = /(?:^|&)([sz])=([A-Za-z0-9\-_]+)/.exec(raw);
+  if (!m) return false;
+
+  let p;
+  try { p = await unpackPayload(m[1], m[2]); }
+  catch (e) {
+    // A mangled link is the one failure that looks like a working app with no
+    // work in it. Say so out loud instead of failing silently.
+    setTimeout(() => toast('That setup link came through broken — ask for a fresh one'), 800);
+    history.replaceState(null, '', location.pathname);
+    return false;
+  }
+
+  // k = the JobTread catalog he can pick from.
+  // j = sites already chosen for him, switched on immediately.
+  let added = 0;
+  if (Array.isArray(p.k)) {
+    S.catalog = p.k.map(a => {
+      const t = tidyJob(a[0], a[1]);
+      return { num: t.num, name: t.name, address: a[2] || '' };
+    });
+  }
+  if (Array.isArray(p.j)) {
+    added = mergeSites(p.j.map(a => {
+      const t = tidyJob(a[0], a[1]);
+      return { num: t.num, name: t.name, address: a[2] || '', freq: a[3] || 'mwf' };
+    }));
+  }
+  if (p.o && !S.settings.ownerName) S.settings.ownerName = p.o;
+  if (p.p && !S.settings.ownerPhone) S.settings.ownerPhone = p.p;
+  if (p.c) S.settings.company = p.c;
+  S.settings.lastRoll = '';
+  save();
+
+  history.replaceState(null, '', location.pathname);
+  if (added) setTimeout(() => toast(`${added} job site${added === 1 ? '' : 's'} loaded`), 700);
+  else if (S.catalog.length) setTimeout(() => toast(`${S.catalog.length} JobTread jobs ready to pick from`), 700);
+  return true;
+}
+
+/* JobTread numbering is inconsistent: the number field often carries a suffix
+   ("204kitchen"), the name repeats the number ("Job204Kitchen"), or the name
+   trails a second one ("Smith Kitchen - Job #203"). Straighten it out so the
+   list reads at arm's length in the sun. Nothing meaningful is discarded.
+   No real job names in here — this file is served publicly. */
+function tidyJob(num, name) {
+  const rawNum = String(num || '').trim();
+  const rawName = String(name || '').trim();
+  const dig = (rawNum.match(/^\d+/) || rawName.match(/\b(\d{2,4})\b/) || [''])[0];
+
+  let n = rawName;
+  n = n.replace(/\s*[-\u2013\u2014]\s*job\s*#?\s*\d+\s*$/i, '');   // "... - Job #115"
+  n = n.replace(/^job\s*#?\s*/i, '');                                  // leading "Job "
+  if (dig) n = n.replace(new RegExp('^#?' + dig + '\\s*'), '');
+  n = n.replace(/^job\s*#?\s*/i, '');
+  n = n.replace(/^[\s\-\u2013\u2014:]+/, '').trim();
+  n = n.replace(/([a-z])([A-Z])/g, '$1 $2');   // NurseryAddon -> Nursery Addon
+  if (!n) n = rawName || (dig ? 'Job ' + dig : 'Job');
+  n = n.charAt(0).toUpperCase() + n.slice(1);
+
+  return { num: dig || rawNum, name: n };
+}
+
+function mergeSites(list) {
+  let added = 0;
+  list.forEach(j => {
+    if (!j || !j.name) return;
+    const dup = S.jobs.some(x => (x.num || '') === (j.num || '') && x.name === j.name);
+    if (dup) return;
+    S.jobs.push({
+      id: uid(), num: j.num || '', name: j.name, address: j.address || '',
+      phase: '', freq: j.freq || 'mwf', status: 'active', createdAt: Date.now()
+    });
+    added++;
+  });
+  return added;
+}
+
+/* Build the link from whatever is on THIS device right now. Drew keeps the
+   master copy on his phone; every time the job list changes he re-sends. */
+/* Two ways to hand this off:
+     'sites'   — only the sites switched on here. Small, and the other phone is
+                 working the second it opens. Default.
+     'catalog' — the whole JobTread list, for the other phone to choose from. */
+async function buildSetupLink(mode) {
+  const payload = { v: 1, c: S.settings.company, o: S.settings.ownerName, p: S.settings.ownerPhone };
+  if (mode === 'catalog') {
+    payload.k = (S.catalog || []).map(x => [x.num, x.name, x.address]);
+  } else {
+    payload.j = S.jobs.filter(x => x.status === 'active')
+      .map(x => [x.num || '', x.name, x.address || '', x.freq || 'mwf']);
+  }
+  return location.origin + location.pathname + '#' + await packPayload(payload);
+}
+
+async function shareSetupLink(mode) {
+  const active = S.jobs.filter(x => x.status === 'active').length;
+  const cat = (S.catalog || []).length;
+
+  if (mode === undefined) {
+    sheet(`
+      <h2>Send it to a phone</h2>
+      <p class="sub">Either way it's one link, and he taps it once.</p>
+      <button class="btn btn-primary" onclick="shareSetupLink('sites')">
+        Send my ${active} job site${active === 1 ? '' : 's'}</button>
+      <p class="hint">He opens it and the sites are already there — nothing for him
+        to choose. Short link, safest through a text.</p>
+      <div style="height:14px"></div>
+      <button class="btn btn-ghost" ${cat ? '' : 'disabled'} onclick="shareSetupLink('catalog')">
+        Send the full JobTread list${cat ? ' (' + cat + ')' : ''}</button>
+      <p class="hint">He picks which ones he's running. Longer link.</p>
+      <div class="divider"></div>
+      <button class="btn btn-navy" onclick="closeSheet()">Cancel</button>`);
+    return;
+  }
+
+  const url = await buildSetupLink(mode);
+  const msg = mode === 'catalog'
+    ? `FieldOps — tap this once, then pick the sites you're running:\n\n${url}`
+    : `FieldOps — tap this once and your job sites are loaded:\n\n${url}`;
+
+  closeSheet();
+  if (navigator.share) {
+    try { await navigator.share({ title: 'FieldOps setup', text: msg }); return; }
+    catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  try { await navigator.clipboard.writeText(msg); toast('Copied — paste it into a text'); }
+  catch (e) {
+    sheet(`<h2>Setup link</h2><p class="sub">Copy this and text it.</p>
+      <div class="field"><textarea style="min-height:180px;font-size:12px" readonly>${esc(msg)}</textarea></div>
+      <button class="btn btn-navy" onclick="closeSheet()">Done</button>`);
+  }
+}
+
+/* ------------------------------------------------------------- item model */
+/*  type:   check | material | inspection | sub | followup | other
+    status: open | done | waiting
+    due:    ISO date the thing must happen
+    origDue: never changes — used to show how late something is
+    waitOn / nudgeDays: follow-up engine
+*/
+const TYPE_LABEL = {
+  check: 'Site check', material: 'Material', inspection: 'Inspection',
+  sub: 'Sub / crew', followup: 'Follow-up', other: 'To do',
+  punch: 'Punch list', safety: 'Toolbox talk'
+};
+const TYPE_CLASS = {
+  check: 'p-check', material: 'p-material', inspection: 'p-inspection',
+  sub: 'p-sub', followup: 'p-followup', other: 'p-other',
+  punch: 'p-punch', safety: 'p-safety'
+};
+
+function mkItem(o) {
+  return Object.assign({
+    id: uid(), jobId: null, type: 'other', title: '', detail: '',
+    due: todayISO(), origDue: o.due || todayISO(),
+    status: 'open', waitOn: '', nudgeDays: 2, lastNudge: '',
+    auto: false, createdAt: Date.now(), doneAt: null
+  }, o);
+}
+function addItem(o) { const it = mkItem(o); S.items.push(it); save(); return it; }
+function jobById(id) { return S.jobs.find(j => j.id === id) || null; }
+function jobLabel(id) {
+  const j = jobById(id);
+  return j ? (j.num ? `#${j.num} ${j.name}` : j.name) : 'General';
+}
+
+/* ------------------------------------------------------- recurrence rules */
+function dueOnDay(freq, iso) {
+  const d = dowOf(iso);
+  if (d === 0) return false;                       // never schedule Sunday
+  if (freq === 'daily')  return d >= 1 && d <= 5;  // weekdays
+  if (freq === 'mwf')    return d === 1 || d === 3 || d === 5;
+  if (freq === 'weekly') return d === 1;           // Monday
+  return false;
+}
+
+/* ------------------------------------------------------------- the engine */
+/* Runs on every app open. This is what makes forgetting impossible:
+   - overdue work is dragged forward, never dropped
+   - today's site checks are created automatically
+   - anything "waiting on" someone comes back and taps him on the shoulder  */
+function rollForward() {
+  const t = todayISO();
+
+  // 1. drag every unfinished open item onto today
+  S.items.forEach(it => {
+    if (it.status === 'open' && it.due < t) it.due = t;
+  });
+
+  // 2. auto-create today's site checks for every active job
+  if (S.settings.lastRoll !== t) {
+    S.jobs.filter(j => j.status === 'active').forEach(j => {
+      if (!dueOnDay(j.freq, t)) return;
+      const exists = S.items.some(it =>
+        it.type === 'check' && it.jobId === j.id && it.origDue === t);
+      if (exists) return;
+      S.items.push(mkItem({
+        jobId: j.id, type: 'check', auto: true,
+        title: 'Site check', due: t, origDue: t
+      }));
+    });
+    // 2b. the one thing every PM forgets: confirming tomorrow's crews.
+    //     Auto-created every weekday. Not optional.
+    const d = dowOf(t);
+    if (d >= 1 && d <= 5) {
+      const has = S.items.some(i => i.type === 'sub' && i.auto && i.origDue === t);
+      if (!has) {
+        S.items.push(mkItem({
+          jobId: null, type: 'sub', auto: true, due: t, origDue: t,
+          title: "Confirm tomorrow's crews and subs",
+          detail: 'Call or text every sub scheduled for tomorrow. Confirm time, site, and scope.'
+        }));
+      }
+    }
+
+    // 2c. weekly toolbox talk, one per active site, generated Monday.
+    //     If it slips, it rolls forward like everything else — so the week
+    //     never passes without one on the record.
+    if (d === 1) {
+      S.jobs.filter(j => j.status === 'active').forEach(j => {
+        const has = S.items.some(i => i.type === 'safety' && i.jobId === j.id && i.origDue === t);
+        if (has) return;
+        S.items.push(mkItem({
+          jobId: j.id, type: 'safety', auto: true, due: t, origDue: t,
+          title: 'Toolbox talk', detail: 'Pick a topic, hold the talk, capture a signature.'
+        }));
+      });
+    }
+
+    S.settings.lastRoll = t;
+  }
+
+  // 3. nudge anything waiting on a human
+  S.items.forEach(it => {
+    if (it.status !== 'waiting') return;
+    const since = it.lastNudge || it.origDue;
+    if (daysBetween(since, t) >= (it.nudgeDays || 2)) {
+      it.status = 'open';
+      it.due = t;
+      it.lastNudge = t;
+      it.title = it.title.startsWith('Chase') ? it.title : it.title;
+    }
+  });
+
+  // 4. purge completed items older than 60 days to keep storage small
+  const cutoff = Date.now() - 60 * DAY;
+  S.items = S.items.filter(it => !(it.status === 'done' && it.doneAt && it.doneAt < cutoff));
+
+  save();
+}
+
+/* ------------------------------------------------------------- selectors */
+/* Punch items are deliberately kept OUT of the daily list. A punch list that
+   screams every morning trains him to ignore the app. It lives on the site. */
+const openItems    = () => S.items.filter(i => i.status === 'open' && i.type !== 'punch');
+const punchItems   = jobId => S.items.filter(i => i.type === 'punch' && i.jobId === jobId);
+const punchOpen    = jobId => punchItems(jobId).filter(i => i.status !== 'done');
+const waitingItems = () => S.items.filter(i => i.status === 'waiting' && i.type !== 'punch');
+const todayItems   = () => openItems().filter(i => i.due <= todayISO());
+const laterItems   = () => openItems().filter(i => i.due > todayISO());
+const overdueItems = () => todayItems().filter(i => i.origDue < todayISO());
+const onTimeItems  = () => todayItems().filter(i => i.origDue >= todayISO());
+const logToday     = jobId => S.logs.find(l => l.jobId === jobId && l.date === todayISO()) || null;
+
+/* ====================================================================== */
+/*                                RENDER                                  */
+/* ====================================================================== */
+
+let TAB = 'today';
+
+function render() {
+  rollForward();
+  const main = $('#main');
+  if (TAB === 'today')   main.innerHTML = viewToday();
+  if (TAB === 'sites')   main.innerHTML = viewSites();
+  if (TAB === 'waiting') main.innerHTML = viewWaiting();
+  if (TAB === 'report')  main.innerHTML = viewReport();
+  paintHeader();
+  paintBadges();
+  hydratePhotos(main);
+  window.scrollTo(0, 0);
+}
+
+function paintHeader() {
+  const titles = { today: 'Today', sites: 'Job Sites', waiting: 'Waiting On', report: 'Daily Report' };
+  $('#tbTitle').textContent = titles[TAB];
+  const subs = {
+    today: longDate(todayISO()).toUpperCase(),
+    sites: `${S.jobs.filter(j => j.status === 'active').length} ACTIVE SITES`,
+    waiting: 'THINGS OTHER PEOPLE OWE YOU',
+    report: longDate(todayISO()).toUpperCase()
+  };
+  $('#tbSub').textContent = subs[TAB];
+}
+
+function paintBadges() {
+  const n = todayItems().length;
+  const b = $('#badgeToday');
+  b.textContent = n > 99 ? '99+' : n;
+  b.classList.toggle('show', n > 0);
+  b.classList.toggle('amber', overdueItems().length === 0);
+
+  const w = waitingItems().length;
+  const bw = $('#badgeWaiting');
+  bw.textContent = w;
+  bw.classList.toggle('show', w > 0);
+  bw.classList.add('amber');
+}
+
+/* ------------------------------------------------------------ TODAY view */
+function viewToday() {
+  const od = overdueItems();
+  const ot = onTimeItems();
+  const total = od.length + ot.length;
+
+  if (!S.jobs.length) return emptyStart();
+
+  let h = '';
+
+  if (total === 0) {
+    h += `<div class="strip clear">
+            <h2>You're clear.</h2>
+            <p>NOTHING LEFT TODAY — ${esc(longDate(todayISO()).toUpperCase())}</p>
+          </div>`;
+  } else {
+    h += `<div class="strip">
+            <h2>${total} thing${total === 1 ? '' : 's'} left</h2>
+            <p>${od.length ? od.length + ' OVERDUE · ' : ''}${ot.length} DUE TODAY</p>
+          </div>`;
+  }
+
+  h += banner();
+
+  // Problems and errands first. Site checks get their own block so they
+  // never bury a BLOCKED item.
+  const isCheck = i => i.type === 'check';
+  const odWork = od.filter(i => !isCheck(i));
+  const odCheck = od.filter(isCheck);
+  const otWork = ot.filter(i => !isCheck(i));
+  const otCheck = ot.filter(isCheck);
+
+  if (odWork.length) {
+    h += secHead('Overdue — do these first', odWork.length, 'red');
+    h += odWork.sort(byUrgency).map(itemCard).join('');
+  }
+  if (otWork.length) {
+    h += secHead('Handle today', otWork.length, 'amber');
+    h += otWork.sort(byUrgency).map(itemCard).join('');
+  }
+  const checks = odCheck.concat(otCheck);
+  if (checks.length) {
+    const doneChecks = S.jobs.filter(j => j.status === 'active' && logToday(j.id) && logToday(j.id).completedAt).length;
+    h += secHead(`Site visits — ${doneChecks} done, ${checks.length} to go`, checks.length, odCheck.length ? 'red' : '');
+    h += checks.sort(byUrgency).map(itemCard).join('');
+  }
+
+  if (total === 0) {
+    h += `<div class="empty">
+            <div class="big">&#9989;</div>
+            <h4>Every site handled</h4>
+            <p>Send Drew the daily report and shut it down.</p>
+          </div>
+          <button class="btn btn-navy" onclick="go('report')">Send today's report</button>`;
+  }
+
+  const later = laterItems();
+  if (later.length) {
+    h += secHead('Coming up', later.length, '');
+    h += later.sort((a, b) => a.due.localeCompare(b.due)).slice(0, 12).map(itemCard).join('');
+  }
+
+  h += `<p class="tiny">Anything you don't finish rolls to tomorrow automatically.<br>Nothing gets lost.</p>`;
+  return h;
+}
+
+/* At most ONE banner, ever. Two competing prompts is how you get a man who
+   ignores both. Priority: today's report > reminders > install. */
+function banner() {
+  const bar = (title, body, label, action, urgent) => `
+    <div class="warn" style="${urgent ? 'border-color:#E8942A;background:#FFF1DC;' : ''}
+         display:flex;align-items:center;gap:14px;padding:14px">
+      <div style="flex:1">
+        <div style="font-size:16px;font-weight:800;margin-bottom:2px">${title}</div>
+        <div style="font-size:13.5px;font-weight:600;opacity:.85">${body}</div>
+      </div>
+      <button class="chip on teal" style="flex:0 0 auto" onclick="${action}">${label}</button>
+    </div>`;
+
+  if (new Date().getHours() >= 15 && S.settings.lastReportSent !== todayISO()) {
+    return bar("Today's report hasn't gone out",
+      `Send it to ${esc(S.settings.ownerName || 'the office')} before you leave the last site.`,
+      'Send', "go('report')", true);
+  }
+  if (!S.settings.reminders && 'Notification' in window && Notification.permission !== 'denied') {
+    return bar('Turn on reminders',
+      'A morning nudge and an end-of-day nudge. Takes one tap.',
+      'Turn on', 'enableReminders()');
+  }
+  if (deferredPrompt && !isStandalone()) {
+    return bar('Install FieldOps',
+      'Put it on your home screen. Opens instantly, works with no signal.',
+      'Install', 'installApp()');
+  }
+  return '';
+}
+
+function byUrgency(a, b) {
+  const rank = { followup: 0, inspection: 1, material: 2, sub: 3, other: 4, check: 5 };
+  if (a.origDue !== b.origDue) return a.origDue.localeCompare(b.origDue);
+  return (rank[a.type] ?? 9) - (rank[b.type] ?? 9);
+}
+
+function secHead(label, n, cls) {
+  return `<div class="sec ${cls}"><i class="dot"></i><h3>${esc(label)}</h3><span class="count">${n}</span></div>`;
+}
+
+function itemCard(it) {
+  const late = daysBetween(it.origDue, todayISO());
+  const flag = late > 0 ? 'flag-red' : (it.type === 'check' ? 'flag-teal' : 'flag-amber');
+  const isFuture = it.due > todayISO();
+  const check = it.type === 'check';
+  const job = jobById(it.jobId);
+
+  // A site check card leads with WHERE. Everything else leads with WHAT.
+  const title = check && job ? ((job.num ? '#' + job.num + ' ' : '') + job.name) : it.title;
+
+  let meta = check
+    ? `<span>${esc((job && job.address) || 'No address')}</span>`
+    : `<span class="job">${esc(jobLabel(it.jobId))}</span>`;
+  if (late > 0) meta += `<span class="late">${late} day${late === 1 ? '' : 's'} late</span>`;
+  else if (isFuture) meta += `<span>${esc(prettyDate(it.due))}</span>`;
+  if (it.waitOn) meta += `<span>waiting on ${esc(it.waitOn)}</span>`;
+
+  const safety = it.type === 'safety';
+  const primary = check
+    ? `<button onclick="startCheck('${it.jobId}')"><b>Start check</b></button>`
+    : safety
+      ? `<button onclick="openTalk('${it.id}')"><b>Hold talk</b></button>`
+      : `<button onclick="snooze('${it.id}')">Not today</button>`;
+  const tapAction = check ? `startCheck('${it.jobId}')`
+    : safety ? `openTalk('${it.id}')` : `openItem('${it.id}')`;
+
+  return `
+  <div class="card ${isFuture ? 'flag-grey' : flag}">
+    <div class="crow">
+      <div class="cbody" onclick="${tapAction}">
+        <span class="pill ${TYPE_CLASS[it.type] || 'p-other'}">${esc(TYPE_LABEL[it.type] || 'To do')}</span>
+        <div class="ctitle" style="margin-top:6px">${esc(title)}</div>
+        <div class="cmeta">${meta}</div>
+        ${it.detail ? `<div class="cnote">${esc(it.detail)}</div>` : ''}
+      </div>
+      <button class="cdone" onclick="completeItem('${it.id}')" aria-label="Done">
+        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6"
+          stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></svg>
+      </button>
+    </div>
+    <div class="cacts">
+      ${primary}
+      ${check
+        ? `<button onclick="snooze('${it.id}')">Not today</button>
+           <button onclick="navTo('${esc((job && job.address) || '').replace(/'/g, "\\'")}')">Directions</button>`
+        : `<button onclick="markWaiting('${it.id}')">Waiting</button>
+           <button onclick="openItem('${it.id}')">Details</button>`}
+    </div>
+  </div>`;
+}
+
+/* ------------------------------------------------------------ SITES view */
+/* The blank canvas. Same words on Today and Sites so there is exactly one
+   thing to do on first run. */
+function emptyStart() {
+  const n = (S.catalog || []).length;
+  return `
+    <div class="empty" style="padding:38px 20px 26px">
+      <div class="big">&#127959;</div>
+      <h4>Let's set up your sites</h4>
+      <p>${n ? `${n} jobs came over from JobTread. Pick the ones you're actually running.`
+             : "No job list came through on your link — a text app most likely cut it short."}</p>
+    </div>
+    ${n
+      ? `<button class="btn btn-primary" onclick="openPicker()">Choose from JobTread</button>
+         <button class="btn btn-ghost" onclick="editJob('')">Add a site by hand</button>`
+      : `<button class="btn btn-primary" onclick="editJob('')">Add a site by hand</button>
+         <div class="warn" style="margin-top:16px;text-align:left">
+           <b>Missing your job list?</b><br>
+           Copy the whole link out of the text, paste it into your browser's address
+           bar, and go. Or ask for a fresh link.
+         </div>`}
+    <p class="tiny">You can add or drop sites any time. Nothing here is permanent.</p>`;
+}
+
+function viewSites() {
+  const active = S.jobs.filter(j => j.status === 'active');
+  const closed = S.jobs.filter(j => j.status !== 'active');
+  if (!active.length && !closed.length) {
+    return emptyStart();
+  }
+
+  let h = '';
+  active.forEach(j => {
+    const items = openItems().filter(i => i.jobId === j.id);
+    const late = items.filter(i => i.origDue < todayISO()).length;
+    const log = logToday(j.id);
+    const checked = !!(log && log.completedAt);
+
+    h += `<div class="site">
+      <h4>${j.num ? '#' + esc(j.num) + ' ' : ''}${esc(j.name)}</h4>
+      <div class="addr">${esc(j.address || 'No address set')}</div>
+      <div class="stat">
+        <span>${items.length} open</span>
+        ${late ? `<span class="n">${late} late</span>` : ''}
+        ${punchOpen(j.id).length ? `<span>${punchOpen(j.id).length} punch</span>` : ''}
+        <span class="${checked ? 'ok' : ''}">${checked ? 'Checked today' : 'Not checked today'}</span>
+      </div>
+      <div class="row">
+        <button class="${checked ? 'done' : 'go'}" onclick="startCheck('${j.id}')">
+          ${checked ? 'Check again' : 'Site check'}</button>
+        <button onclick="openPunch('${j.id}')">Punch</button>
+        <button onclick="openJob('${j.id}')">Open</button>
+      </div>
+    </div>`;
+  });
+
+  if ((S.catalog || []).length) {
+    h += `<button class="btn btn-ghost" onclick="openPicker()">Add another site from JobTread</button>`;
+  } else {
+    h += `<button class="btn btn-ghost" onclick="editJob('')">Add a site</button>`;
+  }
+
+  if (closed.length) {
+    h += secHead('Closed sites', closed.length, '');
+    closed.forEach(j => {
+      h += `<div class="site" style="opacity:.62">
+        <h4>${j.num ? '#' + esc(j.num) + ' ' : ''}${esc(j.name)}</h4>
+        <div class="addr">${esc(j.address || '')}</div>
+        <div class="row"><button onclick="reopenJob('${j.id}')">Reopen</button></div>
+      </div>`;
+    });
+  }
+  return h;
+}
+
+/* ---------------------------------------------------------- WAITING view */
+function viewWaiting() {
+  const w = waitingItems().sort((a, b) => (a.lastNudge || a.origDue).localeCompare(b.lastNudge || b.origDue));
+  if (!w.length) {
+    return `<div class="empty"><div class="big">&#128076;</div><h4>Nobody owes you anything</h4>
+            <p>When you're waiting on a sub, supplier, or the county, mark it here and the
+               app will bring it back to you.</p></div>`;
+  }
+  let h = `<div class="warn">Each of these comes back to your Today list automatically.
+           You do not need to remember to chase anyone.</div>`;
+  w.forEach(it => {
+    const since = it.lastNudge || it.origDue;
+    const d = daysBetween(since, todayISO());
+    const next = Math.max(0, (it.nudgeDays || 2) - d);
+    h += `<div class="card flag-amber">
+      <div class="crow">
+        <div class="cbody" onclick="openItem('${it.id}')">
+          <span class="pill ${TYPE_CLASS[it.type] || 'p-other'}">${esc(TYPE_LABEL[it.type])}</span>
+          <div class="ctitle" style="margin-top:6px">${esc(it.title)}</div>
+          <div class="cmeta">
+            <span class="job">${esc(jobLabel(it.jobId))}</span>
+            <span>waiting on <b>${esc(it.waitOn || 'someone')}</b></span>
+            <span>${d} day${d === 1 ? '' : 's'}</span>
+          </div>
+          <div class="cnote">Comes back to Today ${next === 0 ? 'tomorrow' : 'in ' + next + ' day' + (next === 1 ? '' : 's')}.</div>
+        </div>
+        <button class="cdone" onclick="completeItem('${it.id}')" aria-label="Done">
+          <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6"
+            stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></svg>
+        </button>
+      </div>
+      <div class="cacts">
+        <button onclick="unwait('${it.id}')">Chase it now</button>
+        <button onclick="openItem('${it.id}')">Details</button>
+      </div>
+    </div>`;
+  });
+  return h;
+}
+
+/* ----------------------------------------------------------- REPORT view */
+function buildReport() {
+  const t = todayISO();
+  const lines = [];
+  lines.push(`${S.settings.company.toUpperCase()} — DAILY FIELD REPORT`);
+  lines.push(longDate(t));
+  if (S.settings.pmName) lines.push(`PM: ${S.settings.pmName}`);
+  lines.push('');
+
+  const logs = S.logs.filter(l => l.date === t && l.completedAt);
+  const active = S.jobs.filter(j => j.status === 'active');
+
+  lines.push(`SITES VISITED: ${logs.length} of ${active.length}`);
+  lines.push('');
+
+  logs.forEach(l => {
+    const j = jobById(l.jobId);
+    lines.push(`— ${j ? (j.num ? '#' + j.num + ' ' : '') + j.name : 'Site'}`);
+    if (l.crewCount != null) lines.push(`   Crew on site: ${l.crewCount}${l.trades && l.trades.length ? ' (' + l.trades.join(', ') + ')' : ''}`);
+    lines.push(`   Progress: ${l.progress || 'not noted'}`);
+    if (l.blocked) lines.push(`   ** BLOCKED: ${l.blockedNote || 'see PM'}`);
+    if (l.materialNote) lines.push(`   Materials: ${l.materialNote}`);
+    if (l.cleanIssue) lines.push(`   Site condition: ${l.cleanIssue}`);
+    if (l.punchAdded) lines.push(`   Punch items added: ${l.punchAdded}`);
+    if (l.clientNote) lines.push(`   Client needs: ${l.clientNote}`);
+    if (l.photoIds && l.photoIds.length) lines.push(`   Photos taken: ${l.photoIds.length}`);
+    lines.push('');
+  });
+
+  const missed = active.filter(j => !logs.some(l => l.jobId === j.id) &&
+    S.items.some(i => i.type === 'check' && i.jobId === j.id && i.origDue === t));
+  if (missed.length) {
+    lines.push('NOT VISITED TODAY:');
+    missed.forEach(j => lines.push(`   - ${(j.num ? '#' + j.num + ' ' : '') + j.name}`));
+    lines.push('');
+  }
+
+  const done = S.items.filter(i => i.status === 'done' && i.doneAt &&
+    new Date(i.doneAt).toDateString() === new Date().toDateString());
+  lines.push(`CLOSED OUT TODAY: ${done.length}`);
+  done.slice(0, 20).forEach(i => lines.push(`   - ${i.title} (${jobLabel(i.jobId)})`));
+  lines.push('');
+
+  const od = overdueItems();
+  if (od.length) {
+    lines.push(`STILL OPEN / OVERDUE: ${od.length}`);
+    od.slice(0, 20).forEach(i =>
+      lines.push(`   - ${i.title} (${jobLabel(i.jobId)}) — ${daysBetween(i.origDue, t)}d late`));
+    lines.push('');
+  }
+
+  const talks = S.talks.filter(x => x.date === t);
+  if (talks.length) {
+    lines.push('TOOLBOX TALKS HELD:');
+    talks.forEach(x => lines.push(
+      `   - ${jobLabel(x.jobId)}: ${x.topic}${x.attendees ? ' — ' + x.attendees : ''}${x.sigId ? ' (signed)' : ''}`));
+    lines.push('');
+  }
+
+  const punchTotals = active
+    .map(j => [j, punchOpen(j.id).length]).filter(([, n]) => n > 0);
+  if (punchTotals.length) {
+    lines.push('PUNCH LISTS OPEN:');
+    punchTotals.forEach(([j, n]) =>
+      lines.push(`   - ${(j.num ? '#' + j.num + ' ' : '') + j.name}: ${n}`));
+    lines.push('');
+  }
+
+  const w = waitingItems();
+  if (w.length) {
+    lines.push('WAITING ON:');
+    w.forEach(i => lines.push(`   - ${i.waitOn || 'someone'}: ${i.title} (${jobLabel(i.jobId)})`));
+    lines.push('');
+  }
+
+  lines.push('Sent from A&B FieldOps');
+  return lines.join('\n');
+}
+
+function viewReport() {
+  const txt = buildReport();
+  return `
+    <div class="warn">One tap sends ${esc(S.settings.ownerName || 'the owner')} everything that happened today.
+      Do it before you leave the last site.</div>
+    <div class="rep">${esc(txt)}</div>
+    <div style="height:14px"></div>
+    <button class="btn btn-primary" onclick="shareReport()">Send report</button>
+    <button class="btn btn-ghost" onclick="copyReport()">Copy text</button>
+    <p class="tiny">Report rebuilds itself every time you open this tab.</p>`;
+}
+
+function markReportSent() {
+  S.settings.lastReportSent = todayISO();
+  save();
+}
+async function shareReport() {
+  const txt = buildReport();
+  if (navigator.share) {
+    try { await navigator.share({ title: 'Daily Field Report', text: txt }); markReportSent(); render(); return; }
+    catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  const phone = (S.settings.ownerPhone || '').replace(/[^\d+]/g, '');
+  if (phone) { markReportSent(); location.href = `sms:${phone}?&body=${encodeURIComponent(txt)}`; return; }
+  copyReport();
+  markReportSent();
+}
+async function copyReport() {
+  const txt = buildReport();
+  try { await navigator.clipboard.writeText(txt); toast('Report copied'); }
+  catch (e) {
+    const ta = document.createElement('textarea');
+    ta.value = txt; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); ta.remove(); toast('Report copied');
+  }
+}
+
+/* ====================================================================== */
+/*                              ACTIONS                                   */
+/* ====================================================================== */
+
+function go(tab) {
+  TAB = tab;
+  $$('.tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  render();
+}
+
+function completeItem(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  it.status = 'done'; it.doneAt = Date.now();
+  save(); buzz(); toast('Done');
+  render();
+}
+function snooze(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  it.due = addDaysISO(todayISO(), 1);
+  save(); toast('Moved to tomorrow — it will come back');
+  render();
+}
+function unwait(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  it.status = 'open'; it.due = todayISO(); it.lastNudge = todayISO();
+  save(); go('today');
+}
+function markWaiting(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  sheet(`
+    <h2>Who are you waiting on?</h2>
+    <p class="sub">${esc(it.title)} — ${esc(jobLabel(it.jobId))}</p>
+    <div class="field">
+      <label>Name or company</label>
+      <input id="wOn" placeholder="e.g. Cobb County, Ferguson, Mike (electrician)"
+        value="${esc(it.waitOn)}" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Remind me again in</label>
+      <div class="chips" id="wDays">
+        ${[1, 2, 3, 5, 7].map(d => `<button class="chip ${((it.nudgeDays || 2) === d) ? 'on teal' : ''}"
+          data-d="${d}">${d} day${d === 1 ? '' : 's'}</button>`).join('')}
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="saveWaiting('${it.id}')">Park it</button>
+    <button class="btn btn-ghost" onclick="closeSheet()">Cancel</button>
+    <p class="tiny">It leaves your Today list now and comes back on its own.</p>
+  `);
+  let sel = it.nudgeDays || 2;
+  $$('#wDays .chip').forEach(c => c.onclick = () => {
+    sel = +c.dataset.d;
+    $$('#wDays .chip').forEach(x => x.classList.remove('on', 'teal'));
+    c.classList.add('on', 'teal');
+  });
+  markWaiting._get = () => sel;
+}
+function saveWaiting(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  it.waitOn = ($('#wOn').value || '').trim();
+  it.nudgeDays = markWaiting._get ? markWaiting._get() : 2;
+  it.status = 'waiting';
+  it.lastNudge = todayISO();
+  save(); closeSheet(); toast('Parked — it will come back to you');
+  render();
+}
+
+function openItem(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  const late = daysBetween(it.origDue, todayISO());
+  sheet(`
+    <h2>${esc(it.title)}</h2>
+    <p class="sub">${esc(jobLabel(it.jobId))} · ${esc(TYPE_LABEL[it.type])}
+      ${late > 0 ? ' · <b style="color:#D64545">' + late + ' days late</b>' : ''}</p>
+    <div class="field">
+      <label>Notes</label>
+      <textarea id="iDetail" placeholder="Anything you'll forget by tomorrow">${esc(it.detail)}</textarea>
+    </div>
+    <div class="field">
+      <label>Due</label>
+      <input type="date" id="iDue" value="${esc(it.due)}">
+    </div>
+    <button class="btn btn-primary" onclick="saveItemEdit('${it.id}')">Save</button>
+    <button class="btn btn-ghost" onclick="completeItem('${it.id}');closeSheet()">Mark done</button>
+    <button class="btn btn-danger" onclick="killItem('${it.id}')">Delete this</button>
+  `);
+}
+function saveItemEdit(id) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  it.detail = $('#iDetail').value.trim();
+  const d = $('#iDue').value;
+  if (d) { it.due = d; if (d > it.origDue) it.origDue = d; }
+  save(); closeSheet(); render();
+}
+function killItem(id) {
+  if (!confirm('Delete this for good?')) return;
+  S.items = S.items.filter(i => i.id !== id);
+  save(); closeSheet(); render();
+}
+
+/* ------------------------------------------------------------ job sheets */
+function openJob(id) {
+  const j = jobById(id); if (!j) return;
+  const items = openItems().filter(i => i.jobId === id);
+  const recent = S.logs.filter(l => l.jobId === id && l.completedAt)
+    .sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
+
+  sheet(`
+    <h2>${j.num ? '#' + esc(j.num) + ' ' : ''}${esc(j.name)}</h2>
+    <p class="sub">${esc(j.address || '')}</p>
+    ${j.address ? `<button class="btn btn-ghost" onclick="navTo('${esc(j.address).replace(/'/g, "\\'")}')">Directions</button>` : ''}
+    <button class="btn btn-primary" onclick="closeSheet();startCheck('${j.id}')">Start site check</button>
+    <div class="divider"></div>
+    <div class="sec"><i class="dot"></i><h3>Open items</h3><span class="count">${items.length}</span></div>
+    ${items.length ? items.map(i => `
+      <div class="card"><div class="crow"><div class="cbody">
+        <div class="ctitle" style="font-size:16px">${esc(i.title)}</div>
+        <div class="cmeta"><span>${esc(TYPE_LABEL[i.type])}</span><span>${esc(prettyDate(i.due))}</span></div>
+      </div><button class="cdone" onclick="completeItem('${i.id}');openJob('${j.id}')">
+        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6"
+        stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></svg></button>
+      </div></div>`).join('') : `<p class="hint">Nothing open on this site.</p>`}
+    <div class="divider"></div>
+    <div class="sec"><i class="dot"></i><h3>Last visits</h3></div>
+    ${recent.length ? recent.map(l => `
+      <div class="card"><div class="cbody">
+        <div class="ctitle" style="font-size:16px">${esc(prettyDate(l.date))}</div>
+        <div class="cnote">${esc(l.progress || '')}${l.blocked ? '\n** BLOCKED: ' + esc(l.blockedNote || '') : ''}</div>
+      </div></div>`).join('') : `<p class="hint">No visits logged yet.</p>`}
+    <div class="divider"></div>
+    <button class="btn btn-navy" onclick="openPunch('${j.id}')">
+      Punch list (${punchOpen(j.id).length} open)</button>
+    <button class="btn btn-ghost" onclick="addInspections('${j.id}')">Add inspection checklist</button>
+    <button class="btn btn-ghost" onclick="editJob('${j.id}')">Edit site</button>
+    <button class="btn btn-danger" onclick="closeJob('${j.id}')">Close this job</button>
+    <div class="divider"></div>
+    <button class="btn btn-navy" onclick="closeSheet()">Done</button>
+  `);
+}
+/* Standard Georgia residential inspection sequence. Dates are placeholders —
+   the PM drags them as the schedule firms up. The point is that the list
+   exists at all, so nothing gets drywalled over. */
+const INSPECTIONS = [
+  ['Post permit card on site', 0],
+  ['Footing inspection', 7],
+  ['Foundation / slab inspection', 14],
+  ['Framing inspection', 28],
+  ['Electrical rough-in inspection', 28],
+  ['Plumbing rough-in inspection', 28],
+  ['HVAC rough-in inspection', 28],
+  ['Insulation inspection (before drywall)', 35],
+  ['Final inspection / CO', 60]
+];
+function addInspections(jobId) {
+  if (!confirm('Add the standard inspection checklist to this site? You can move the dates later.')) return;
+  INSPECTIONS.forEach(([title, off]) => {
+    const exists = S.items.some(i => i.jobId === jobId && i.title === title && i.status !== 'done');
+    if (exists) return;
+    const d = addDaysISO(todayISO(), off);
+    addItem({ jobId, type: 'inspection', title, due: d, origDue: d });
+  });
+  closeSheet(); go('today'); toast('Inspection checklist added');
+}
+
+function navTo(addr) {
+  if (!addr) { toast('No address on this site'); return; }
+  window.open('https://maps.google.com/?q=' + encodeURIComponent(addr), '_blank');
+}
+function editJob(id) {
+  const j = jobById(id) || { id: null, num: '', name: '', address: '', freq: 'mwf' };
+  sheet(`
+    <h2>${j.id ? 'Edit site' : 'New job site'}</h2>
+    <p class="sub">Keep the name short. He reads this on a phone in the sun.</p>
+    <div class="field"><label>Job number</label>
+      <input id="jNum" value="${esc(j.num)}" placeholder="116" autocomplete="off"></div>
+    <div class="field"><label>Site name</label>
+      <input id="jName" value="${esc(j.name)}" placeholder="Smith Kitchen" autocomplete="off"></div>
+    <div class="field"><label>Address</label>
+      <input id="jAddr" value="${esc(j.address)}" placeholder="123 Main St, Marietta GA" autocomplete="off"></div>
+    <div class="field"><label>How often does he check this site?</label>
+      <div class="chips" id="jFreq">
+        <button class="chip ${j.freq === 'daily' ? 'on teal' : ''}" data-f="daily">Every weekday</button>
+        <button class="chip ${j.freq === 'mwf' ? 'on teal' : ''}" data-f="mwf">Mon / Wed / Fri</button>
+        <button class="chip ${j.freq === 'weekly' ? 'on teal' : ''}" data-f="weekly">Mondays</button>
+      </div>
+      <p class="hint">The app creates the site check for him. He never schedules it.</p>
+    </div>
+    <button class="btn btn-primary" onclick="saveJob('${j.id || ''}')">Save site</button>
+    <button class="btn btn-ghost" onclick="closeSheet()">Cancel</button>
+  `);
+  let f = j.freq || 'mwf';
+  $$('#jFreq .chip').forEach(c => c.onclick = () => {
+    f = c.dataset.f;
+    $$('#jFreq .chip').forEach(x => x.classList.remove('on', 'teal'));
+    c.classList.add('on', 'teal');
+  });
+  editJob._get = () => f;
+}
+function saveJob(id) {
+  const num = $('#jNum').value.trim();
+  const name = $('#jName').value.trim();
+  if (!name) { toast('Give the site a name'); return; }
+  const addr = $('#jAddr').value.trim();
+  const freq = editJob._get ? editJob._get() : 'mwf';
+  let j = id ? jobById(id) : null;
+  if (j) { Object.assign(j, { num, name, address: addr, freq }); }
+  else { S.jobs.push({ id: uid(), num, name, address: addr, freq, phase: '', status: 'active', createdAt: Date.now() }); }
+  S.settings.lastRoll = '';   // force regeneration so the new site gets a check today
+  save(); closeSheet(); go('sites'); toast('Site saved');
+}
+function closeJob(id) {
+  if (!confirm('Close this job? Its open items disappear from Today.')) return;
+  const j = jobById(id); if (!j) return;
+  j.status = 'closed';
+  S.items.forEach(i => { if (i.jobId === id && i.status !== 'done') { i.status = 'done'; i.doneAt = Date.now(); } });
+  save(); closeSheet(); render(); toast('Job closed');
+}
+function reopenJob(id) {
+  const j = jobById(id); if (!j) return;
+  j.status = 'active'; S.settings.lastRoll = '';
+  save(); render();
+}
+
+/* -------------------------------------------------------------- add menu */
+function addMenu() {
+  sheet(`
+    <h2>Add something</h2>
+    <p class="sub">Two taps, then get back to work.</p>
+    <button class="btn btn-primary" onclick="quickAdd('material')">Material or delivery</button>
+    <button class="btn btn-navy" onclick="quickAdd('inspection')">Inspection or permit</button>
+    <button class="btn btn-navy" onclick="quickAdd('sub')">Sub / crew to confirm</button>
+    <button class="btn btn-navy" onclick="quickAdd('followup')">Follow-up on someone</button>
+    <button class="btn btn-navy" onclick="quickAdd('punch')">Punch list item</button>
+    <button class="btn btn-ghost" onclick="quickAdd('other')">Anything else</button>
+    <div class="divider"></div>
+    <button class="btn btn-ghost" onclick="editJob('')">New job site</button>
+  `);
+}
+
+const PRESETS = {
+  material: ['Order it', 'Confirm delivery date', 'Delivery arrives', 'Check it in'],
+  inspection: ['Call for inspection', 'Post permit on site', 'Rough-in inspection', 'Framing inspection', 'Final inspection'],
+  sub: ['Confirm crew for tomorrow', 'Sub walkthrough', 'Sub is short-handed'],
+  followup: ['Client question unanswered', 'Chase quote', 'Chase change order'],
+  punch: ['Touch up paint', 'Caulk', 'Door adjustment', 'Trim repair', 'Clean / final detail'],
+  other: []
+};
+
+function quickAdd(type) {
+  const jobs = S.jobs.filter(j => j.status === 'active');
+  sheet(`
+    <h2>${esc(TYPE_LABEL[type])}</h2>
+    <p class="sub">What has to happen?</p>
+    ${PRESETS[type].length ? `<div class="field"><div class="chips" id="qPre">
+      ${PRESETS[type].map(p => `<button class="chip" data-p="${esc(p)}">${esc(p)}</button>`).join('')}
+    </div></div>` : ''}
+    <div class="field"><label>The thing</label>
+      <input id="qTitle" placeholder="e.g. Order tile for master bath" autocomplete="off"></div>
+    <div class="field"><label>Which site</label>
+      <select id="qJob">
+        <option value="">— No specific site —</option>
+        ${jobs.map(j => `<option value="${j.id}">${j.num ? '#' + esc(j.num) + ' ' : ''}${esc(j.name)}</option>`).join('')}
+      </select></div>
+    <div class="field"><label>When</label>
+      <div class="chips" id="qWhen">
+        <button class="chip on teal" data-d="0">Today</button>
+        <button class="chip" data-d="1">Tomorrow</button>
+        <button class="chip" data-d="3">In 3 days</button>
+        <button class="chip" data-d="7">Next week</button>
+      </div>
+      <input type="date" id="qDate" style="margin-top:10px" value="${todayISO()}">
+    </div>
+    <div class="field"><label>Notes (optional)</label>
+      <textarea id="qDetail" placeholder="Supplier, phone number, what it's for"></textarea></div>
+    <button class="btn btn-primary" onclick="saveQuick('${type}')">Add it</button>
+    <button class="btn btn-ghost" onclick="closeSheet()">Cancel</button>
+  `);
+  $$('#qPre .chip').forEach(c => c.onclick = () => { $('#qTitle').value = c.dataset.p; });
+  $$('#qWhen .chip').forEach(c => c.onclick = () => {
+    $$('#qWhen .chip').forEach(x => x.classList.remove('on', 'teal'));
+    c.classList.add('on', 'teal');
+    $('#qDate').value = addDaysISO(todayISO(), +c.dataset.d);
+  });
+}
+function saveQuick(type) {
+  const title = $('#qTitle').value.trim();
+  if (!title) { toast('What is it?'); return; }
+  const due = $('#qDate').value || todayISO();
+  addItem({
+    type, title, jobId: $('#qJob').value || null,
+    detail: $('#qDetail').value.trim(), due, origDue: due
+  });
+  closeSheet();
+  if (type === 'punch') { go('sites'); toast('Added to that site\'s punch list'); }
+  else { go('today'); toast('Added'); }
+}
+
+/* ====================================================================== */
+/*                        GUIDED SITE CHECK FLOW                          */
+/* ====================================================================== */
+/* One question per screen. Big buttons. Resumable. He cannot skip ahead
+   and he cannot get lost. */
+
+let F = null;
+
+const STEPS = [
+  'crew', 'photos', 'progress', 'blocked', 'materials', 'clean', 'punch', 'client', 'done'
+];
+
+function startCheck(jobId) {
+  const j = jobById(jobId);
+  if (!j) { toast('Site not found'); return; }
+  const existing = S.logs.find(l => l.jobId === jobId && l.date === todayISO());
+  F = existing && !existing.completedAt ? existing : (existing || null);
+  if (!F) {
+    F = {
+      id: uid(), jobId, date: todayISO(), crewCount: 0, trades: [],
+      photoIds: [], progress: '', blocked: false, blockedNote: '',
+      materialNote: '', cleanIssue: '', clientNote: '', punchAdded: 0,
+      step: 0, completedAt: null, startedAt: Date.now()
+    };
+    S.logs.push(F);
+  } else if (F.completedAt) {
+    F.step = 0; F.completedAt = null;
+  }
+  save();
+  closeSheet();
+  $('#flow').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  paintFlow();
+}
+
+function exitFlow(saveIt) {
+  $('#flow').classList.add('hidden');
+  $('#flow').innerHTML = '';
+  document.body.style.overflow = '';
+  if (saveIt) save();
+  F = null;
+  render();
+}
+
+function flowNext() { F.step = Math.min(STEPS.length - 1, F.step + 1); save(); paintFlow(); }
+function flowBack() { if (F.step === 0) return exitFlow(true); F.step--; save(); paintFlow(); }
+
+function paintFlow() {
+  const j = jobById(F.jobId);
+  const step = STEPS[F.step];
+  const pct = Math.round((F.step / (STEPS.length - 1)) * 100);
+
+  let body = '', foot = '';
+
+  if (step === 'crew') {
+    const trades = ['Framing', 'Electrical', 'Plumbing', 'HVAC', 'Drywall', 'Paint', 'Tile', 'Trim', 'Roofing', 'Concrete', 'Cleanup'];
+    body = `
+      <h2 class="fl-q">Who's on site?</h2>
+      <p class="fl-help">Head count right now. Zero is a valid answer — and worth knowing.</p>
+      <div class="stepper">
+        <button onclick="crewDelta(-1)">&minus;</button>
+        <div class="val" id="crewVal">${F.crewCount}</div>
+        <button onclick="crewDelta(1)">+</button>
+      </div>
+      <div class="field" style="margin-top:24px"><label>Which trades</label>
+        <div class="chips" id="flTrades">
+          ${trades.map(t => `<button class="chip ${F.trades.includes(t) ? 'on teal' : ''}"
+            onclick="toggleTrade('${t}',this)">${t}</button>`).join('')}
+        </div>
+      </div>`;
+    foot = `<button class="btn btn-primary" onclick="flowNext()">Next</button>`;
+  }
+
+  if (step === 'photos') {
+    body = `
+      <h2 class="fl-q">Take photos.</h2>
+      <p class="fl-help">Minimum one. Progress, problems, anything you'd have to explain later.
+        This is your record if a client argues.</p>
+      <input type="file" id="flCam" accept="image/*" capture="environment" multiple class="hidden">
+      <div class="photogrid" id="flPhotos">
+        <div class="add" onclick="$('#flCam').click()">+</div>
+      </div>`;
+    foot = F.photoIds.length
+      ? `<button class="btn btn-primary" onclick="flowNext()">Next (${F.photoIds.length} photo${F.photoIds.length === 1 ? '' : 's'})</button>`
+      : `<button class="btn btn-navy" onclick="$('#flCam').click()">Open camera</button>
+         <button class="btn btn-ghost" onclick="flowNext()">No photos today</button>`;
+  }
+
+  if (step === 'progress') {
+    body = `
+      <h2 class="fl-q">What got done?</h2>
+      <p class="fl-help">One line is enough. Talk into it if it's easier.</p>
+      <div class="field">
+        <textarea id="flProgress" placeholder="Hung drywall in master, started mud"
+          style="min-height:140px;font-size:19px">${esc(F.progress)}</textarea>
+      </div>
+      <button class="btn btn-ghost" id="flMic">Use voice</button>`;
+    foot = `<button class="btn btn-primary" onclick="saveProgress()">Next</button>`;
+  }
+
+  if (step === 'blocked') {
+    body = `
+      <h2 class="fl-q">Is anything stopping work?</h2>
+      <p class="fl-help">Missing material, no power, wrong measurement, sub no-showed, waiting on a decision.</p>
+      <div class="bigpick">
+        <button class="no" onclick="setBlocked(true)">Yes — something's blocking us
+          <small>Creates an urgent item and flags it in tonight's report</small></button>
+        <button class="yes" onclick="setBlocked(false)">No — work is moving
+          <small>Nothing in the way</small></button>
+      </div>`;
+  }
+
+  if (step === 'materials') {
+    body = `
+      <h2 class="fl-q">Materials OK?</h2>
+      <p class="fl-help">Does this site have what it needs for the next two days?</p>
+      <div class="bigpick">
+        <button class="yes" onclick="setMaterials(false)">Yes — we're stocked
+          <small>Nothing to order</small></button>
+        <button class="no" onclick="setMaterials(true)">No — something's needed
+          <small>Adds it to your order list so it doesn't get forgotten</small></button>
+      </div>`;
+  }
+
+  if (step === 'clean') {
+    body = `
+      <h2 class="fl-q">Site clean and safe?</h2>
+      <p class="fl-help">Debris, trip hazards, exposed wire, dumpster full, protection down.
+        This is what a client notices first.</p>
+      <div class="bigpick">
+        <button class="yes" onclick="setClean(false)">Yes — site's tight
+          <small>Nothing to fix</small></button>
+        <button class="no" onclick="setClean(true)">No — needs attention
+          <small>Adds a cleanup item for tomorrow morning</small></button>
+      </div>`;
+  }
+
+  if (step === 'punch') {
+    const n = punchOpen(F.jobId).length;
+    body = `
+      <h2 class="fl-q">Spot anything for the punch list?</h2>
+      <p class="fl-help">Scratched trim, missed caulk, a door that binds. Catch it now and it
+        doesn't become an argument at the final walkthrough.
+        ${n ? `<br><br><b>${n} item${n === 1 ? '' : 's'} already on this site's list.</b>` : ''}</p>
+      <div class="bigpick">
+        <button class="yes" onclick="setPunch(false)">Nothing today
+          <small>Move on</small></button>
+        <button onclick="setPunch(true)">Yes — add to the punch list
+          <small>Stays on the site, out of your daily list</small></button>
+      </div>`;
+  }
+
+  if (step === 'client') {
+    body = `
+      <h2 class="fl-q">Anything the client needs to hear?</h2>
+      <p class="fl-help">A question they asked, a decision you need, a change they mentioned on site.
+        If you don't log it now, it's gone.</p>
+      <div class="bigpick">
+        <button class="yes" onclick="setClient(false)">Nothing — all quiet
+          <small>No client action</small></button>
+        <button onclick="setClient(true)">Yes — log it
+          <small>Goes to Drew tonight and stays on your list</small></button>
+      </div>`;
+  }
+
+  if (step === 'done') {
+    const parts = [];
+    parts.push(`${F.crewCount} on site${F.trades.length ? ' — ' + F.trades.join(', ') : ''}`);
+    if (F.progress) parts.push(F.progress);
+    if (F.blocked) parts.push('BLOCKED: ' + (F.blockedNote || 'see PM'));
+    if (F.materialNote) parts.push('Needs: ' + F.materialNote);
+    if (F.cleanIssue) parts.push('Site: ' + F.cleanIssue);
+    if (F.punchAdded) parts.push(F.punchAdded + ' item(s) added to punch list');
+    if (F.clientNote) parts.push('Client: ' + F.clientNote);
+    body = `
+      <h2 class="fl-q">${esc(j ? j.name : 'Site')} — logged.</h2>
+      <p class="fl-help">Here's what goes in tonight's report.</p>
+      <div class="rep">${esc(parts.join('\n'))}</div>
+      <p class="fl-help" style="margin-top:18px">${F.photoIds.length} photo${F.photoIds.length === 1 ? '' : 's'} saved to this site.</p>`;
+    foot = `<button class="btn btn-primary" onclick="finishCheck()">Finish site check</button>`;
+  }
+
+  $('#flow').innerHTML = `
+    <div class="fl-top">
+      <div class="r">
+        <button class="fl-x" onclick="flowBack()">${F.step === 0 ? 'Cancel' : 'Back'}</button>
+        <div class="fl-job">${esc(j ? ((j.num ? '#' + j.num + ' ' : '') + j.name).toUpperCase() : 'SITE CHECK')}</div>
+        <button class="fl-x" onclick="exitFlow(true)">Pause</button>
+      </div>
+      <div class="fl-bar"><i style="width:${pct}%"></i></div>
+    </div>
+    <div class="fl-body">${body}</div>
+    ${foot ? `<div class="fl-foot">${foot}</div>` : ''}`;
+
+  if (step === 'photos') {
+    $('#flCam').onchange = e => handlePhotos(e.target.files);
+    renderFlowPhotos();
+  }
+  if (step === 'progress') wireMic();
+}
+
+function crewDelta(n) {
+  F.crewCount = Math.max(0, (F.crewCount || 0) + n);
+  $('#crewVal').textContent = F.crewCount;
+  buzz(8); save();
+}
+function toggleTrade(t, el) {
+  const i = F.trades.indexOf(t);
+  if (i >= 0) F.trades.splice(i, 1); else F.trades.push(t);
+  el.classList.toggle('on'); el.classList.toggle('teal');
+  save();
+}
+
+async function handlePhotos(files) {
+  for (const f of Array.from(files).slice(0, 6)) {
+    try {
+      const url = await shrink(f);
+      const id = uid();
+      await PhotoDB.put(id, url);
+      F.photoIds.push(id);
+    } catch (e) { console.warn(e); }
+  }
+  save();
+  paintFlow();
+}
+function shrink(file, max = 1280, q = 0.72) {
+  return new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const sc = Math.min(1, max / Math.max(img.width, img.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(img.width * sc); c.height = Math.round(img.height * sc);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        res(c.toDataURL('image/jpeg', q));
+      };
+      img.onerror = rej;
+      img.src = fr.result;
+    };
+    fr.onerror = rej;
+    fr.readAsDataURL(file);
+  });
+}
+async function renderFlowPhotos() {
+  const grid = $('#flPhotos'); if (!grid) return;
+  const add = grid.querySelector('.add');
+  grid.innerHTML = '';
+  for (const id of F.photoIds) {
+    const url = await PhotoDB.get(id);
+    if (!url) continue;
+    const im = document.createElement('img');
+    im.src = url; im.dataset.pid = id;
+    im.onclick = () => { if (confirm('Remove this photo?')) removePhoto(id); };
+    grid.appendChild(im);
+  }
+  grid.appendChild(add);
+}
+async function removePhoto(id) {
+  F.photoIds = F.photoIds.filter(p => p !== id);
+  await PhotoDB.del(id);
+  save(); paintFlow();
+}
+
+function saveProgress() { F.progress = $('#flProgress').value.trim(); save(); flowNext(); }
+
+function wireMic() {
+  const btn = $('#flMic'); if (!btn) return;
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { btn.classList.add('hidden'); return; }
+  let rec = null, on = false;
+  btn.onclick = () => {
+    if (on && rec) { rec.stop(); return; }
+    rec = new SR();
+    rec.lang = 'en-US'; rec.interimResults = false; rec.continuous = false;
+    rec.onstart = () => { on = true; btn.textContent = 'Listening… tap to stop'; };
+    rec.onresult = e => {
+      const t = Array.from(e.results).map(r => r[0].transcript).join(' ');
+      const ta = $('#flProgress');
+      ta.value = (ta.value ? ta.value + ' ' : '') + t;
+    };
+    rec.onerror = () => { toast('Mic not available'); };
+    rec.onend = () => { on = false; btn.textContent = 'Use voice'; };
+    try { rec.start(); } catch (e) { toast('Mic not available'); }
+  };
+}
+
+/* -------- yes/no steps that can spawn follow-up work -------- */
+function askThen(question, placeholder, cb) {
+  sheet(`
+    <h2>${esc(question)}</h2>
+    <div class="field"><textarea id="akTxt" placeholder="${esc(placeholder)}"
+      style="min-height:120px;font-size:18px"></textarea></div>
+    <button class="btn btn-primary" id="akOk">Save</button>
+    <button class="btn btn-ghost" onclick="closeSheet()">Cancel</button>
+  `);
+  setTimeout(() => $('#akTxt') && $('#akTxt').focus(), 120);
+  $('#akOk').onclick = () => { const v = $('#akTxt').value.trim(); closeSheet(); cb(v); };
+}
+
+function setBlocked(yes) {
+  if (!yes) { F.blocked = false; F.blockedNote = ''; save(); flowNext(); return; }
+  askThen('What is blocking work?', 'e.g. Electrician never showed, rough-in not done', v => {
+    F.blocked = true; F.blockedNote = v;
+    addItem({
+      jobId: F.jobId, type: 'followup', title: 'BLOCKED: ' + (v || 'work stopped'),
+      detail: 'Logged during site check ' + prettyDate(F.date), due: todayISO(), origDue: todayISO()
+    });
+    save(); flowNext();
+  });
+}
+function setMaterials(yes) {
+  if (!yes) { F.materialNote = ''; save(); flowNext(); return; }
+  askThen('What does this site need?', 'e.g. 12 sheets 5/8 drywall, 2 boxes of screws — need by Friday', v => {
+    F.materialNote = v;
+    addItem({
+      jobId: F.jobId, type: 'material', title: 'Order: ' + (v || 'materials'),
+      detail: 'Flagged on site ' + prettyDate(F.date), due: todayISO(), origDue: todayISO()
+    });
+    save(); flowNext();
+  });
+}
+function setClean(needs) {
+  if (!needs) { F.cleanIssue = ''; save(); flowNext(); return; }
+  askThen('What needs cleaning up?', 'e.g. Dumpster full, debris in driveway, no floor protection', v => {
+    F.cleanIssue = v;
+    const d = addDaysISO(todayISO(), 1);
+    addItem({
+      jobId: F.jobId, type: 'other', title: 'Clean up: ' + (v || 'site condition'),
+      detail: 'Flagged on site ' + prettyDate(F.date), due: d, origDue: d
+    });
+    save(); flowNext();
+  });
+}
+function setPunch(yes) {
+  if (!yes) { save(); flowNext(); return; }
+  askThen('What goes on the punch list?', 'One per line:\ne.g.\nTouch up paint in master\nHall door binds\nRecaulk tub surround', v => {
+    const lines = (v || '').split('\n').map(s => s.replace(/^[-•\d.\s]+/, '').trim()).filter(Boolean);
+    lines.forEach(t => addItem({
+      jobId: F.jobId, type: 'punch', title: t,
+      detail: 'Spotted ' + prettyDate(F.date), due: todayISO(), origDue: todayISO()
+    }));
+    F.punchAdded = (F.punchAdded || 0) + lines.length;
+    save(); flowNext();
+  });
+}
+function setClient(yes) {
+  if (!yes) { F.clientNote = ''; save(); flowNext(); return; }
+  askThen('What does the client need?', 'e.g. Wants to change vanity color — needs a price', v => {
+    F.clientNote = v;
+    addItem({
+      jobId: F.jobId, type: 'followup', title: 'Client: ' + (v || 'follow up'),
+      detail: 'From site visit ' + prettyDate(F.date), due: todayISO(), origDue: todayISO()
+    });
+    save(); flowNext();
+  });
+}
+
+function finishCheck() {
+  F.completedAt = Date.now();
+  const it = S.items.find(i =>
+    i.type === 'check' && i.jobId === F.jobId && i.origDue === F.date && i.status !== 'done');
+  if (it) { it.status = 'done'; it.doneAt = Date.now(); }
+  save(); buzz(25);
+  exitFlow(true);
+  toast('Site check logged');
+}
+
+/* ====================================================================== */
+/*                            SHEET PLUMBING                              */
+/* ====================================================================== */
+function sheet(html) {
+  $('#sheetBody').innerHTML = html;
+  $('#sheetWrap').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeSheet() {
+  $('#sheetWrap').classList.add('hidden');
+  $('#sheetBody').innerHTML = '';
+  if ($('#flow').classList.contains('hidden')) document.body.style.overflow = '';
+}
+
+/* -------------------------------------------------------------- settings */
+function openSettings() {
+  const s = S.settings;
+  sheet(`
+    <h2>Settings</h2>
+    <p class="sub">Set once. Then forget it.</p>
+    <div class="field"><label>Project manager name</label>
+      <input id="sPm" value="${esc(s.pmName)}" placeholder="Name on the daily report"></div>
+    <div class="field"><label>Send reports to</label>
+      <input id="sOwner" value="${esc(s.ownerName)}" placeholder="Drew"></div>
+    <div class="field"><label>Their mobile number</label>
+      <input id="sPhone" type="tel" value="${esc(s.ownerPhone)}" placeholder="+1 770 555 0100">
+      <p class="hint">Used by the Send report button when the share sheet isn't available.</p></div>
+    <button class="btn btn-primary" onclick="saveSettings()">Save</button>
+    <div class="divider"></div>
+    <button class="btn btn-ghost" onclick="enableReminders()">
+      ${S.settings.reminders ? 'Reminders are on — test one' : 'Turn on reminders'}</button>
+    ${!isStandalone() ? `<button class="btn btn-ghost" onclick="installApp()">Install to home screen</button>` : ''}
+    <div class="divider"></div>
+    ${(S.catalog || []).length ? `<button class="btn btn-navy" onclick="openPicker()">Add sites from JobTread</button>` : ''}
+    <button class="btn btn-ghost" onclick="shareSetupLink()">Send setup link to a phone</button>
+    <p class="hint">Texts a link that loads every active job site onto another
+      phone in one tap. Re-send it whenever the job list changes.</p>
+    <div style="height:10px"></div>
+    <button class="btn btn-ghost" onclick="exportData()">Export a backup</button>
+    <button class="btn btn-ghost" onclick="importData()">Restore from backup</button>
+    <button class="btn btn-danger" onclick="wipe()">Erase everything</button>
+    <p class="tiny">All data lives on this phone. Export a backup weekly if it matters.<br>
+      A&amp;B FieldOps v1.0</p>
+  `);
+}
+function saveSettings() {
+  S.settings.pmName = $('#sPm').value.trim();
+  S.settings.ownerName = $('#sOwner').value.trim() || 'Drew';
+  S.settings.ownerPhone = $('#sPhone').value.trim();
+  save(); closeSheet(); toast('Saved'); render();
+}
+function exportData() {
+  const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `fieldops-backup-${todayISO()}.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+function importData() {
+  const inp = document.createElement('input');
+  inp.type = 'file'; inp.accept = 'application/json';
+  inp.onchange = () => {
+    const f = inp.files[0]; if (!f) return;
+    const fr = new FileReader();
+    fr.onload = () => {
+      try {
+        const d = JSON.parse(fr.result);
+        if (!d.jobs) throw new Error('bad file');
+        S = d; save(); closeSheet(); render(); toast('Restored');
+      } catch (e) { toast('That file did not look right'); }
+    };
+    fr.readAsText(f);
+  };
+  inp.click();
+}
+function wipe() {
+  if (!confirm('Erase every job, item, and photo on this phone?')) return;
+  if (!confirm('Really? This cannot be undone.')) return;
+  localStorage.removeItem(KEY);
+  indexedDB.deleteDatabase('abfo-photos');
+  location.reload();
+}
+
+/* --------------------------------------------------- photo hydration */
+async function hydratePhotos(root) {
+  for (const el of $$('img[data-pid]', root)) {
+    const url = await PhotoDB.get(el.dataset.pid);
+    if (url) el.src = url;
+  }
+}
+
+
+/* ====================================================================== */
+/*                    PICK YOUR SITES  (from JobTread)                    */
+/* ====================================================================== */
+/* JobTread holds every lead, estimate and dead deal alongside real work —
+   its Status field is not maintained, so no filter can tell them apart.
+   The man who drives to these places can. So: show him the list, let him
+   tap the ones he's actually running. One tap each. */
+
+let PICK = null;
+
+function openPicker() {
+  const chosen = new Set();
+  PICK = { q: '', chosen };
+  closeSheet();
+  $('#flow').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  paintPicker();
+  // deliberately NOT auto-focusing: a keyboard covering half the list on
+  // arrival is worse than one tap on the search box when he wants it.
+}
+
+function alreadyHave(c) {
+  return S.jobs.some(j => (j.num || '') === (c.num || '') && j.name === c.name);
+}
+
+/* The shell is painted ONCE. Only the rows and the footer redraw as he types
+   or taps — rebuilding the whole screen on each keystroke drops focus, closes
+   the keyboard, and makes the search feel broken. */
+function paintPicker() {
+  $('#flow').innerHTML = `
+    <div class="fl-top">
+      <div class="r">
+        <button class="fl-x" onclick="closePicker()">Cancel</button>
+        <div class="fl-job">YOUR JOB SITES</div>
+        <button class="fl-x" onclick="newSiteFromPicker()">+ New</button>
+      </div>
+      <input id="pkSearch" class="pksearch" placeholder="Search jobs&hellip;"
+        autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+      <div class="pkhint">Tap the sites you're running. Skip the leads and estimates.</div>
+    </div>
+    <div class="fl-body" id="pkList" style="padding:14px 12px 12px"></div>
+    <div class="fl-foot" id="pkFoot"></div>`;
+
+  const box = $('#pkSearch');
+  box.value = PICK.q;
+  box.addEventListener('input', () => { PICK.q = box.value; paintPickRows(); });
+  box.addEventListener('keydown', e => { if (e.key === 'Enter') box.blur(); });
+
+  paintPickRows();
+}
+
+function pickMatches() {
+  const q = PICK.q.trim().toLowerCase();
+  return (S.catalog || []).map((c, i) => ({ c, i }))
+    .filter(({ c }) => !q || (c.num + ' ' + c.name + ' ' + c.address).toLowerCase().includes(q));
+}
+
+function paintPickRows() {
+  const list = pickMatches();
+  const n = PICK.chosen.size;
+
+  $('#pkList').innerHTML = list.length ? list.map(({ c, i }) => {
+    const have = alreadyHave(c);
+    const on = PICK.chosen.has(i);
+    return `
+      <button class="pkrow ${on ? 'on' : ''} ${have ? 'have' : ''}"
+        ${have ? 'disabled' : `onclick="togglePick(${i})"`}>
+        <span class="pkbox">${have || on ? '&#10003;' : ''}</span>
+        <span class="pktxt">
+          <span class="pkname">${c.num ? '<b>#' + esc(c.num) + '</b> ' : ''}${esc(c.name)}</span>
+          <span class="pkaddr">${esc(c.address || 'No address in JobTread')}</span>
+        </span>
+        ${have ? '<span class="pktag">Added</span>' : ''}
+      </button>`;
+  }).join('') : `<div class="empty" style="padding:40px 20px">
+      <h4>Nothing matches &ldquo;${esc(PICK.q)}&rdquo;</h4>
+      <p>Try the job number, the street, or part of the name.</p></div>`;
+
+  $('#pkFoot').innerHTML = `
+    <button class="btn btn-primary" ${n ? '' : 'disabled'} onclick="commitPicks()">
+      ${n ? `Add ${n} site${n === 1 ? '' : 's'}` : 'Select at least one'}</button>`;
+}
+
+function togglePick(i) {
+  if (PICK.chosen.has(i)) PICK.chosen.delete(i); else PICK.chosen.add(i);
+  buzz(8);
+  paintPickRows();          // rows + footer only; the search box keeps focus
+}
+
+function commitPicks() {
+  if (!PICK || !PICK.chosen.size) return;
+  const picks = Array.from(PICK.chosen).map(i => S.catalog[i]).filter(Boolean);
+  const added = mergeSites(picks.map(c => ({ num: c.num, name: c.name, address: c.address, freq: 'mwf' })));
+  S.settings.lastRoll = '';
+  save();
+  closePicker();
+  go('sites');
+  toast(`${added} site${added === 1 ? '' : 's'} added — check them from Today`);
+}
+
+function newSiteFromPicker() { closePicker(); editJob(''); }
+
+function closePicker() {
+  PICK = null;
+  $('#flow').classList.add('hidden');
+  $('#flow').innerHTML = '';
+  document.body.style.overflow = '';
+  render();
+}
+
+/* ====================================================================== */
+/*                     PUNCH LIST  (per job site)                         */
+/* ====================================================================== */
+/* Kept off the daily list on purpose. It's a closeout tool, not a nag. */
+
+function openPunch(jobId) {
+  const j = jobById(jobId); if (!j) return;
+  const all = punchItems(jobId).sort((a, b) =>
+    (a.status === 'done') - (b.status === 'done') || a.createdAt - b.createdAt);
+  const left = all.filter(i => i.status !== 'done').length;
+
+  sheet(`
+    <h2>Punch list</h2>
+    <p class="sub">${j.num ? '#' + esc(j.num) + ' ' : ''}${esc(j.name)} — ${left} open</p>
+    <div class="field">
+      <label>Add an item</label>
+      <input id="pNew" placeholder="e.g. Touch up paint, master closet" autocomplete="off"
+        onkeydown="if(event.key==='Enter'){addPunch('${jobId}')}">
+    </div>
+    <button class="btn btn-primary" onclick="addPunch('${jobId}')">Add to punch list</button>
+    <div class="divider"></div>
+    ${all.length ? all.map(i => `
+      <div class="punchrow">
+        <button class="${i.status === 'done' ? 'on' : ''}" onclick="togglePunch('${i.id}','${jobId}')"
+          aria-label="Toggle">${i.status === 'done' ? '&#10003;' : ''}</button>
+        <div class="t ${i.status === 'done' ? 'off' : ''}">${esc(i.title)}</div>
+        <button onclick="dropPunch('${i.id}','${jobId}')" aria-label="Delete">&times;</button>
+      </div>`).join('')
+      : `<p class="hint">Nothing on the punch list yet. Add items as you spot them —
+         that's the whole point.</p>`}
+    <div class="divider"></div>
+    ${left ? `<button class="btn btn-ghost" onclick="sharePunch('${jobId}')">Send this list</button>` : ''}
+    <button class="btn btn-navy" onclick="closeSheet()">Done</button>
+  `);
+  setTimeout(() => { const el = $('#pNew'); if (el) el.focus(); }, 120);
+}
+function addPunch(jobId) {
+  const el = $('#pNew'); if (!el) return;
+  const t = el.value.trim();
+  if (!t) { toast('Type the item first'); return; }
+  addItem({ jobId, type: 'punch', title: t, due: todayISO(), origDue: todayISO() });
+  openPunch(jobId);
+}
+function togglePunch(id, jobId) {
+  const it = S.items.find(i => i.id === id); if (!it) return;
+  if (it.status === 'done') { it.status = 'open'; it.doneAt = null; }
+  else { it.status = 'done'; it.doneAt = Date.now(); buzz(); }
+  save(); openPunch(jobId);
+}
+function dropPunch(id, jobId) {
+  S.items = S.items.filter(i => i.id !== id);
+  save(); openPunch(jobId);
+}
+async function sharePunch(jobId) {
+  const j = jobById(jobId);
+  const open = punchOpen(jobId);
+  const txt = [
+    `PUNCH LIST — ${(j.num ? '#' + j.num + ' ' : '') + j.name}`,
+    j.address || '', longDate(todayISO()), '',
+    ...open.map((i, n) => `${n + 1}. ${i.title}`),
+    '', `${open.length} open item${open.length === 1 ? '' : 's'}`,
+    'Arnold & Blanc Contracting'
+  ].join('\n');
+  if (navigator.share) {
+    try { await navigator.share({ title: 'Punch list', text: txt }); return; }
+    catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  try { await navigator.clipboard.writeText(txt); toast('Punch list copied'); }
+  catch (e) { toast('Could not copy'); }
+}
+
+/* ====================================================================== */
+/*                  TOOLBOX TALK  (weekly, with signature)                */
+/* ====================================================================== */
+
+const TALK_TOPICS = [
+  'Ladders & fall protection', 'Housekeeping & trip hazards', 'Electrical / lockout',
+  'PPE — eyes, ears, hands', 'Silica & respirable dust', 'Heat illness & hydration',
+  'Power tool safety', 'Ladder-to-roof access', 'Fire extinguishers & hot work',
+  'Trenching & excavation', 'Overhead work & falling objects'
+];
+
+let SIG = null;
+
+function openTalk(itemId) {
+  const it = S.items.find(i => i.id === itemId); if (!it) return;
+  const j = jobById(it.jobId);
+  sheet(`
+    <h2>Toolbox talk</h2>
+    <p class="sub">${esc(j ? ((j.num ? '#' + j.num + ' ' : '') + j.name) : 'Site')} — ${esc(longDate(todayISO()))}</p>
+    <div class="field">
+      <label>Topic</label>
+      <div class="chips" id="tTopics">
+        ${TALK_TOPICS.map(t => `<button class="chip" data-t="${esc(t)}">${esc(t)}</button>`).join('')}
+      </div>
+      <input id="tTopic" style="margin-top:10px" placeholder="Or type your own" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Who was there</label>
+      <textarea id="tWho" placeholder="Names, or the company if it's a whole crew"></textarea>
+    </div>
+    <div class="field">
+      <label>Signature</label>
+      <div class="sigwrap"><canvas id="tSig"></canvas></div>
+      <p class="hint">Have one person sign for the crew. Tap Clear to redo.</p>
+      <button class="btn btn-ghost" style="margin-top:8px" onclick="clearSig()">Clear signature</button>
+    </div>
+    <button class="btn btn-primary" onclick="saveTalk('${it.id}')">Log the talk</button>
+    <button class="btn btn-ghost" onclick="closeSheet()">Cancel</button>
+  `);
+  $$('#tTopics .chip').forEach(c => c.onclick = () => {
+    $$('#tTopics .chip').forEach(x => x.classList.remove('on', 'teal'));
+    c.classList.add('on', 'teal');
+    $('#tTopic').value = c.dataset.t;
+  });
+  initSig();
+}
+
+function initSig() {
+  const c = $('#tSig'); if (!c) return;
+  const dpr = window.devicePixelRatio || 1;
+  const rect = c.getBoundingClientRect();
+  c.width = Math.round(rect.width * dpr);
+  c.height = Math.round(170 * dpr);
+  const ctx = c.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.lineWidth = 2.4; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.strokeStyle = '#12212F';
+  let drawing = false, empty = true;
+  const pos = e => {
+    const r = c.getBoundingClientRect();
+    const p = e.touches ? e.touches[0] : e;
+    return [p.clientX - r.left, p.clientY - r.top];
+  };
+  const start = e => { e.preventDefault(); drawing = true; empty = false; const [x, y] = pos(e); ctx.beginPath(); ctx.moveTo(x, y); };
+  const move  = e => { if (!drawing) return; e.preventDefault(); const [x, y] = pos(e); ctx.lineTo(x, y); ctx.stroke(); };
+  const end   = () => { drawing = false; };
+  c.addEventListener('pointerdown', start);
+  c.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', end);
+  SIG = { canvas: c, ctx, isEmpty: () => empty, clear: () => { ctx.clearRect(0, 0, c.width, c.height); empty = true; } };
+}
+function clearSig() { if (SIG) SIG.clear(); }
+
+async function saveTalk(itemId) {
+  const it = S.items.find(i => i.id === itemId); if (!it) return;
+  const topic = ($('#tTopic').value || '').trim();
+  if (!topic) { toast('Pick a topic'); return; }
+  const who = ($('#tWho').value || '').trim();
+
+  let sigId = null;
+  if (SIG && !SIG.isEmpty()) {
+    sigId = uid();
+    try { await PhotoDB.put(sigId, SIG.canvas.toDataURL('image/png')); }
+    catch (e) { sigId = null; }
+  }
+  S.talks.push({
+    id: uid(), jobId: it.jobId, date: todayISO(), topic, attendees: who,
+    sigId, at: Date.now()
+  });
+  it.status = 'done'; it.doneAt = Date.now();
+  save(); closeSheet(); buzz(20); toast('Toolbox talk logged');
+  render();
+}
+
+/* ====================================================================== */
+/*                    INSTALL + REMINDERS  (Android)                      */
+/* ====================================================================== */
+/* Android Chrome gives us a real install prompt and real notifications.
+   iOS gives us neither, so everything here degrades quietly. */
+
+let deferredPrompt = null;
+
+function isStandalone() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+async function installApp() {
+  if (!deferredPrompt) { toast('Use the Chrome menu → Install app'); return; }
+  deferredPrompt.prompt();
+  const res = await deferredPrompt.userChoice.catch(() => null);
+  deferredPrompt = null;
+  if (res && res.outcome === 'accepted') toast('Installed — open it from your home screen');
+  render();
+}
+
+async function enableReminders() {
+  if (!('Notification' in window)) { toast('This phone can\'t do app reminders — set phone alarms instead'); return; }
+  let perm = Notification.permission;
+  if (perm !== 'granted') perm = await Notification.requestPermission();
+  if (perm !== 'granted') { toast('Blocked. Turn on notifications for this app in phone settings'); render(); return; }
+
+  S.settings.reminders = true;
+  save();
+
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    // Periodic Background Sync: installed Chrome PWAs on Android only.
+    if ('periodicSync' in reg) {
+      const st = await navigator.permissions.query({ name: 'periodic-background-sync' }).catch(() => null);
+      if (!st || st.state === 'granted') {
+        await reg.periodicSync.register('fieldops-nudge', { minInterval: 8 * 60 * 60 * 1000 }).catch(() => {});
+      }
+    }
+    reg.showNotification('Reminders are on', {
+      body: 'FieldOps will nudge you in the morning and again at the end of the day.',
+      icon: 'icons/icon-192.png', badge: 'icons/icon-192.png', tag: 'fieldops-setup'
+    });
+  } catch (e) { /* no SW yet — the flag still shows the in-app banners */ }
+
+  toast('Reminders on');
+  render();
+}
+
+/* In-app nudge: while the app is open we can fire a notification at the
+   end of the day. Cheap, no server, and it works on any phone that granted
+   permission. The phone alarm in the quick-start sheet is the real backstop. */
+function startNudgeTimer() {
+  setInterval(async () => {
+    if (!S.settings.reminders || Notification.permission !== 'granted') return;
+    const h = new Date().getHours();
+    const t = todayISO();
+    if (h >= 16 && S.settings.lastReportSent !== t && S.settings.lastNudgeShown !== t) {
+      S.settings.lastNudgeShown = t; save();
+      try {
+        const reg = await navigator.serviceWorker.ready;
+        const n = todayItems().length;
+        reg.showNotification('Send the daily report', {
+          body: n ? `${n} item${n === 1 ? '' : 's'} still open. Report hasn't gone to ${S.settings.ownerName}.`
+                  : `Everything's closed out. Send the report before you head home.`,
+          icon: 'icons/icon-192.png', badge: 'icons/icon-192.png', tag: 'fieldops-eod'
+        });
+      } catch (e) {}
+    }
+  }, 5 * 60 * 1000);
+}
+
+
+/* When this page is installed to a home screen, the launcher uses the
+   manifest's start_url. A relative start_url resolves against the manifest's
+   own URL — which is a data: URI in the single-file build — so the launcher
+   can end up pointing at the site root instead of this file, and the icon
+   opens a 404. Rewrite the manifest at runtime with an absolute start_url
+   taken from the page actually running. Works whatever the file is named. */
+function pinManifest() {
+  const link = document.querySelector('link[rel="manifest"]');
+  if (!link) return;
+  const here = location.origin + location.pathname;
+  fetch(link.href)
+    .then(r => r.json())
+    .then(man => {
+      man.start_url = here;
+      man.scope = here;
+      const json = JSON.stringify(man);
+      link.href = 'data:application/manifest+json;base64,' + b64uToStd(json);
+    })
+    .catch(() => {});
+}
+function b64uToStd(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  bytes.forEach(b => { bin += String.fromCharCode(b); });
+  return btoa(bin);
+}
+
+/* ====================================================================== */
+/*                               ONBOARDING                               */
+/* ====================================================================== */
+function onboard() {
+  const gotSites = S.jobs.length > 0;
+  sheet(`
+    <h2>FieldOps</h2>
+    <p class="sub">Nothing on a job site gets forgotten.</p>
+    <div class="warn">
+      <b>Three things, every day.</b><br>
+      1. Open this page. It tells you what to do.<br>
+      2. Tap <b>Site check</b> at each site. Answer the questions.<br>
+      3. Tap <b>Send report</b> before you go home.<br><br>
+      Anything you don't finish comes back tomorrow on its own.
+    </div>
+    ${gotSites ? `<div class="warn" style="background:#E9F7F2;border-color:#A8DDD2;color:#136B60">
+      <b>${S.jobs.length} job sites are already loaded.</b> You're ready to go.</div>` : ''}
+    <div class="field"><label>Your name</label>
+      <input id="oPm" placeholder="Project manager"></div>
+    <button class="btn btn-primary" onclick="finishOnboard()">Start</button>
+    <p class="tiny">Works right here in the browser. Bookmark it, or install it later
+      from Settings if you want it to work with no signal.</p>
+  `);
+}
+function finishOnboard() {
+  S.settings.pmName = (($('#oPm') || {}).value || '').trim();
+  S.settings.onboarded = true;
+  save(); closeSheet(); render();
+}
+
+/* ====================================================================== */
+/*                                 BOOT                                   */
+/* ====================================================================== */
+async function boot() {
+  load();
+  await consumeSetupLink();      // must finish before the first render
+  rollForward();
+
+  $$('.tab').forEach(b => b.onclick = () => { buzz(6); go(b.dataset.tab); });
+  $('#fab').onclick = () => { buzz(6); addMenu(); };
+  $('#btnSettings').onclick = openSettings;
+  $('#sheetBackdrop').onclick = closeSheet;
+  $('#sheetGrab').onclick = closeSheet;   // the handle is the obvious "get me out"
+
+  render();
+  if (!S.settings.onboarded) onboard();
+
+  // If he already has the page open and taps a fresh setup link, the browser
+  // only changes the hash — no reload, no boot(). Catch it here or the link
+  // silently does nothing, which is exactly the kind of thing that makes a man
+  // decide the app is broken.
+  window.addEventListener('hashchange', async () => {
+    if (await consumeSetupLink()) { render(); }
+  });
+
+  // re-roll when the app comes back to the foreground (new day, etc.)
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) { rollForward(); if ($('#flow').classList.contains('hidden')) render(); }
+  });
+
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (TAB === 'today') render();
+  });
+  window.addEventListener('appinstalled', () => { deferredPrompt = null; render(); });
+
+  pinManifest();
+  startNudgeTimer();
+}
+
+document.addEventListener('DOMContentLoaded', boot);
+
+/* expose handlers used from inline onclick */
+Object.assign(window, {
+  go, completeItem, snooze, markWaiting, saveWaiting, unwait, openItem, saveItemEdit,
+  killItem, openJob, editJob, saveJob, closeJob, reopenJob, navTo, addMenu, quickAdd,
+  saveQuick, startCheck, exitFlow, flowNext, flowBack, crewDelta, toggleTrade,
+  saveProgress, setBlocked, setMaterials, setClean, setPunch, setClient, finishCheck,
+  openPunch, addPunch, togglePunch, dropPunch, sharePunch,
+  openTalk, saveTalk, clearSig,
+  closeSheet, openSettings, saveSettings, exportData, importData, wipe, addInspections,
+  shareReport, copyReport, finishOnboard, installApp, enableReminders, isStandalone,
+  shareSetupLink, buildSetupLink, openPicker, closePicker, togglePick,
+  commitPicks, newSiteFromPicker, emptyStart, paintPickRows, tidyJob, $
+});
+
+</script>
+</body>
+</html>
